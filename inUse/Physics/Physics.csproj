@@ -47,11 +47,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeLog.Designer.cs">
+      <DependentUpon>ChangeLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Concept.cs" />
     <Compile Include="Concepts.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Concepts.Designer.cs">
       <DependentUpon>Concepts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Constant.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Constants.cs">
       <SubType>Form</SubType>
@@ -59,6 +69,7 @@
     <Compile Include="Constants.Designer.cs">
       <DependentUpon>Constants.cs</DependentUpon>
     </Compile>
+    <Compile Include="Equation.cs" />
     <Compile Include="Equations.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +82,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HelpScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpScreen.Designer.cs">
+      <DependentUpon>HelpScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Problem.cs" />
     <Compile Include="ProblemsReview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +97,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChangeLog.resx">
+      <DependentUpon>ChangeLog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Concepts.resx">
       <DependentUpon>Concepts.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpScreen.resx">
+      <DependentUpon>HelpScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProblemsReview.resx">
       <DependentUpon>ProblemsReview.cs</DependentUpon>

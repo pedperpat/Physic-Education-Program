@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Physics
 {
@@ -33,6 +34,31 @@ namespace Physics
             //Close();
             Hide();
             mainScreen.ShowDialog();
+        }
+
+        private void graphicPlotter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btSolve_Click(object sender, EventArgs e)
+        {
+            Random rdn = new Random();
+            for (int i = 0; i < 50; i++)
+            {
+                graphicPlotter.Series["Graphic Result"].Points.AddXY
+                                (rdn.Next(0, 10), rdn.Next(0, 10));
+            }
+
+            graphicPlotter.Series["Graphic Result"].ChartType = SeriesChartType.Spline;
+            graphicPlotter.Series["Graphic Result"].Color = Color.Red;
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HelpScreen help = new HelpScreen();
+            Hide();
+            help.ShowDialog();
         }
     }
 }

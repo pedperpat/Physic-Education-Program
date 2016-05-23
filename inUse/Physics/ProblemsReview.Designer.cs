@@ -36,13 +36,13 @@
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backBt = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbProblem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.graphicPlotter = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.resultEq = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btSolve = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.graphicPlotter)).BeginInit();
             this.SuspendLayout();
@@ -81,17 +81,10 @@
             // 
             // helpToolStripMenuItem
             // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // backBt
             // 
@@ -103,12 +96,12 @@
             this.backBt.UseVisualStyleBackColor = true;
             this.backBt.Click += new System.EventHandler(this.backBt_Click);
             // 
-            // textBox1
+            // tbProblem
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 20);
-            this.textBox1.TabIndex = 2;
+            this.tbProblem.Location = new System.Drawing.Point(119, 68);
+            this.tbProblem.Name = "tbProblem";
+            this.tbProblem.Size = new System.Drawing.Size(120, 20);
+            this.tbProblem.TabIndex = 2;
             // 
             // label1
             // 
@@ -127,18 +120,22 @@
             this.graphicPlotter.Legends.Add(legend1);
             this.graphicPlotter.Location = new System.Drawing.Point(4, 104);
             this.graphicPlotter.Name = "graphicPlotter";
+            series1.BackImageTransparentColor = System.Drawing.Color.Black;
             series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.LabelBorderColor = System.Drawing.Color.Transparent;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "Graphic Result";
             this.graphicPlotter.Series.Add(series1);
             this.graphicPlotter.Size = new System.Drawing.Size(305, 173);
             this.graphicPlotter.TabIndex = 4;
             this.graphicPlotter.Text = "graphicEq";
+            this.graphicPlotter.Click += new System.EventHandler(this.graphicPlotter_Click);
             // 
             // resultEq
             // 
             this.resultEq.AutoSize = true;
-            this.resultEq.Location = new System.Drawing.Point(255, 71);
+            this.resultEq.Location = new System.Drawing.Point(329, 104);
             this.resultEq.Name = "resultEq";
             this.resultEq.Size = new System.Drawing.Size(40, 13);
             this.resultEq.TabIndex = 5;
@@ -146,21 +143,32 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(301, 68);
+            this.textBox2.Location = new System.Drawing.Point(375, 104);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 6;
+            // 
+            // btSolve
+            // 
+            this.btSolve.Location = new System.Drawing.Point(248, 68);
+            this.btSolve.Name = "btSolve";
+            this.btSolve.Size = new System.Drawing.Size(83, 20);
+            this.btSolve.TabIndex = 7;
+            this.btSolve.Text = "Solve!";
+            this.btSolve.UseVisualStyleBackColor = true;
+            this.btSolve.Click += new System.EventHandler(this.btSolve_Click);
             // 
             // ProblemsReview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(508, 349);
+            this.Controls.Add(this.btSolve);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.resultEq);
             this.Controls.Add(this.graphicPlotter);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbProblem);
             this.Controls.Add(this.backBt);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -182,12 +190,12 @@
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Button backBt;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbProblem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataVisualization.Charting.Chart graphicPlotter;
         private System.Windows.Forms.Label resultEq;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btSolve;
     }
 }

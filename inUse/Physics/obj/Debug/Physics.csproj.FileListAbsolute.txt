@@ -11,3 +11,5 @@ c:\users\pedro antonio\documents\visual studio 2015\Projects\Physics\Physics\obj
 c:\users\pedro antonio\documents\visual studio 2015\Projects\Physics\Physics\obj\Debug\Physics.csproj.GenerateResource.Cache
 c:\users\pedro antonio\documents\visual studio 2015\Projects\Physics\Physics\obj\Debug\Physics.exe
 c:\users\pedro antonio\documents\visual studio 2015\Projects\Physics\Physics\obj\Debug\Physics.pdb
+C:\Users\Pedro Antonio\Documents\Visual Studio 2015\Projects\Physics\Physics\obj\Debug\Physics.HelpScreen.resources
+C:\Users\Pedro Antonio\Documents\Visual Studio 2015\Projects\Physics\Physics\obj\Debug\Physics.ChangeLog.resources

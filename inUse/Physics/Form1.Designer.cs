@@ -45,6 +45,9 @@
             this.germanLan = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.helpBt = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -190,18 +193,47 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(626, 21);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 13);
+            this.label8.Size = new System.Drawing.Size(127, 13);
             this.label8.TabIndex = 14;
-            this.label8.Text = "V: 0.1 Skeleton";
+            this.label8.Text = "V: 0.2 Improved Skeleton";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(656, 34);
+            this.label9.Location = new System.Drawing.Point(688, 34);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 13);
             this.label9.TabIndex = 15;
-            this.label9.Text = "13/05/2016";
+            this.label9.Text = "23/05/2016";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(350, 119);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(29, 13);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "Help";
+            // 
+            // helpBt
+            // 
+            this.helpBt.Location = new System.Drawing.Point(319, 153);
+            this.helpBt.Name = "helpBt";
+            this.helpBt.Size = new System.Drawing.Size(94, 46);
+            this.helpBt.TabIndex = 17;
+            this.helpBt.Text = "Go to Help";
+            this.helpBt.UseVisualStyleBackColor = true;
+            this.helpBt.Click += new System.EventHandler(this.helpBt_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(678, 53);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 47);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Load changeLog";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainScreen
             // 
@@ -209,6 +241,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(758, 323);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.helpBt);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.germanLan);
@@ -250,6 +285,9 @@
         private System.Windows.Forms.RadioButton germanLan;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button helpBt;
+        private System.Windows.Forms.Button button1;
     }
 }
 

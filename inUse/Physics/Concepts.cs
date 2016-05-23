@@ -18,12 +18,19 @@ namespace Physics
             InitializeComponent();
         }
 
-        private void backBt_Click(object sender, EventArgs e)
+        private void backBt_Click_1(object sender, EventArgs e)
         {
             MainScreen mainScreen = new MainScreen();
             //Close();
             Hide();
             mainScreen.ShowDialog();
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HelpScreen help = new HelpScreen();
+            Hide();
+            help.ShowDialog();
         }
     }
 }
