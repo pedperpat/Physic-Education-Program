@@ -2,13 +2,13 @@
 
 Repaso / Calculadora de física usando Windows Forms
 
-1º Entrega: Crear el esqueleto principal del proyecto con pantalla de inicio, botones y varias ventanas contiguas que aparezcan al apretar dichos botones y cada ventana tenga diferentes opciones a elegir.
+DONE! 1º Entrega: Crear el esqueleto principal del proyecto con pantalla de inicio, botones y varias ventanas contiguas que aparezcan al apretar dichos botones y cada ventana tenga diferentes opciones a elegir.
 
-2º Entrega: Crear una ventana de presentación con mi nombre, la versión actual y el changelog actual. También meter contenido a cada ventana como términos y conceptos importantes sobre física.
+DONE! 2º Entrega: Crear una ventana de presentación con mi nombre, la versión actual y el changelog actual. También meter contenido a cada ventana como términos y conceptos importantes sobre física.
 
-3º Entrega: Añadir los valores de las constantes, para que al pulsar sobre el botón que ponga: "Ir a ver constantes..." lleve al usuario a la ventana con todas las constantes y poder buscar en un buscador la constante que necesite.
+DONE! 3º Entrega: Añadir los valores de las constantes, para que al pulsar sobre el botón que ponga: "Ir a ver constantes..." lleve al usuario a la ventana con todas las constantes y poder buscar en un buscador la constante que necesite.
 
-4º Entrega: Hacer que vaya calculando pequeñas ecuaciones de posición inicial,posición final, Hmax,etc. El usuario introducirá en un textbox los valores a partir de los cuales serán calculadas las ecuaciones. El resultado será visible a través de otro textbox de solo lectura. Además hacer correcciones y comprobar que no se puedan introduzcan datos de otro tipo. 
+DONE! 4º Entrega: Hacer que vaya calculando pequeñas ecuaciones de posición inicial,posición final, Hmax,etc. El usuario introducirá en un textbox los valores a partir de los cuales serán calculadas las ecuaciones. El resultado será visible a través de otro textbox de solo lectura. Además hacer correcciones y comprobar que no se puedan introduzcan datos de otro tipo. 
 
 5º Entrega: Añadir muchas más ecuaciones de física como tiros parabólicos, energía cinética, volumen y presiones.
 
