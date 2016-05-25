@@ -57,18 +57,20 @@
             this.initMetersLb = new System.Windows.Forms.Label();
             this.initMetersTb = new System.Windows.Forms.TextBox();
             this.formulaPb = new System.Windows.Forms.PictureBox();
-            this.resultAcLb = new System.Windows.Forms.Label();
-            this.accelerationResultTb = new System.Windows.Forms.TextBox();
             this.formulaFinalPositionPb = new System.Windows.Forms.PictureBox();
-            this.resultOfFinalPositionLb = new System.Windows.Forms.Label();
             this.finalTimeLb = new System.Windows.Forms.Label();
             this.finalTimeTb = new System.Windows.Forms.TextBox();
             this.solveBt = new System.Windows.Forms.Button();
-            this.finalPositionResultTb = new System.Windows.Forms.TextBox();
+            this.vFinalPb = new System.Windows.Forms.PictureBox();
+            this.finalVLb = new System.Windows.Forms.Label();
+            this.finalVTb = new System.Windows.Forms.TextBox();
+            this.accelLb = new System.Windows.Forms.Label();
+            this.accelTb = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eqGraph)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formulaPb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formulaFinalPositionPb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vFinalPb)).BeginInit();
             this.SuspendLayout();
             // 
             // backBt
@@ -110,42 +112,42 @@
             // equationOfAccelerationToolStripMenuItem
             // 
             this.equationOfAccelerationToolStripMenuItem.Name = "equationOfAccelerationToolStripMenuItem";
-            this.equationOfAccelerationToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.equationOfAccelerationToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.equationOfAccelerationToolStripMenuItem.Text = "Equation of acceleration";
             this.equationOfAccelerationToolStripMenuItem.Click += new System.EventHandler(this.equationOfAccelerationToolStripMenuItem_Click);
             // 
             // equationOfPositionToolStripMenuItem
             // 
             this.equationOfPositionToolStripMenuItem.Name = "equationOfPositionToolStripMenuItem";
-            this.equationOfPositionToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.equationOfPositionToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.equationOfPositionToolStripMenuItem.Text = "Equation of position";
             this.equationOfPositionToolStripMenuItem.Click += new System.EventHandler(this.equationOfPositionToolStripMenuItem_Click);
             // 
             // equationOfHmaxToolStripMenuItem
             // 
             this.equationOfHmaxToolStripMenuItem.Name = "equationOfHmaxToolStripMenuItem";
-            this.equationOfHmaxToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.equationOfHmaxToolStripMenuItem.Text = "Equation of Hmax";
+            this.equationOfHmaxToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.equationOfHmaxToolStripMenuItem.Text = "Equation of initial V and Hmax";
             this.equationOfHmaxToolStripMenuItem.Click += new System.EventHandler(this.equationOfHmaxToolStripMenuItem_Click);
             // 
             // equationOfVelocityToolStripMenuItem
             // 
             this.equationOfVelocityToolStripMenuItem.Name = "equationOfVelocityToolStripMenuItem";
-            this.equationOfVelocityToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.equationOfVelocityToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.equationOfVelocityToolStripMenuItem.Text = "Equation of velocity";
             this.equationOfVelocityToolStripMenuItem.Click += new System.EventHandler(this.equationOfVelocityToolStripMenuItem_Click);
             // 
             // equationOfEnergyToolStripMenuItem
             // 
             this.equationOfEnergyToolStripMenuItem.Name = "equationOfEnergyToolStripMenuItem";
-            this.equationOfEnergyToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.equationOfEnergyToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.equationOfEnergyToolStripMenuItem.Text = "Equation of energy";
             this.equationOfEnergyToolStripMenuItem.Click += new System.EventHandler(this.equationOfEnergyToolStripMenuItem_Click);
             // 
             // equationOfTimeToolStripMenuItem
             // 
             this.equationOfTimeToolStripMenuItem.Name = "equationOfTimeToolStripMenuItem";
-            this.equationOfTimeToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.equationOfTimeToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.equationOfTimeToolStripMenuItem.Text = "Equation of time";
             this.equationOfTimeToolStripMenuItem.Click += new System.EventHandler(this.equationOfTimeToolStripMenuItem_Click);
             // 
@@ -240,16 +242,14 @@
             this.resultLb.Size = new System.Drawing.Size(40, 13);
             this.resultLb.TabIndex = 6;
             this.resultLb.Text = "Result:";
-            this.resultLb.Visible = false;
             // 
             // resultTb
             // 
-            this.resultTb.Location = new System.Drawing.Point(15, 210);
+            this.resultTb.Location = new System.Drawing.Point(58, 181);
             this.resultTb.Name = "resultTb";
             this.resultTb.ReadOnly = true;
             this.resultTb.Size = new System.Drawing.Size(123, 20);
             this.resultTb.TabIndex = 7;
-            this.resultTb.Visible = false;
             // 
             // initTimeLb
             // 
@@ -270,7 +270,7 @@
             // initMetersLb
             // 
             this.initMetersLb.AutoSize = true;
-            this.initMetersLb.Location = new System.Drawing.Point(142, 43);
+            this.initMetersLb.Location = new System.Drawing.Point(275, 43);
             this.initMetersLb.Name = "initMetersLb";
             this.initMetersLb.Size = new System.Drawing.Size(68, 13);
             this.initMetersLb.TabIndex = 10;
@@ -278,7 +278,7 @@
             // 
             // initMetersTb
             // 
-            this.initMetersTb.Location = new System.Drawing.Point(216, 40);
+            this.initMetersTb.Location = new System.Drawing.Point(352, 40);
             this.initMetersTb.Name = "initMetersTb";
             this.initMetersTb.Size = new System.Drawing.Size(44, 20);
             this.initMetersTb.TabIndex = 11;
@@ -287,28 +287,11 @@
             // 
             this.formulaPb.Image = ((System.Drawing.Image)(resources.GetObject("formulaPb.Image")));
             this.formulaPb.InitialImage = ((System.Drawing.Image)(resources.GetObject("formulaPb.InitialImage")));
-            this.formulaPb.Location = new System.Drawing.Point(15, 66);
+            this.formulaPb.Location = new System.Drawing.Point(15, 74);
             this.formulaPb.Name = "formulaPb";
             this.formulaPb.Size = new System.Drawing.Size(264, 54);
             this.formulaPb.TabIndex = 12;
             this.formulaPb.TabStop = false;
-            // 
-            // resultAcLb
-            // 
-            this.resultAcLb.AutoSize = true;
-            this.resultAcLb.Location = new System.Drawing.Point(12, 128);
-            this.resultAcLb.Name = "resultAcLb";
-            this.resultAcLb.Size = new System.Drawing.Size(113, 13);
-            this.resultAcLb.TabIndex = 13;
-            this.resultAcLb.Text = "Result of acceleration:";
-            // 
-            // accelerationResultTb
-            // 
-            this.accelerationResultTb.Location = new System.Drawing.Point(131, 125);
-            this.accelerationResultTb.Name = "accelerationResultTb";
-            this.accelerationResultTb.ReadOnly = true;
-            this.accelerationResultTb.Size = new System.Drawing.Size(100, 20);
-            this.accelerationResultTb.TabIndex = 14;
             // 
             // formulaFinalPositionPb
             // 
@@ -321,20 +304,10 @@
             this.formulaFinalPositionPb.TabStop = false;
             this.formulaFinalPositionPb.Visible = false;
             // 
-            // resultOfFinalPositionLb
-            // 
-            this.resultOfFinalPositionLb.AutoSize = true;
-            this.resultOfFinalPositionLb.Location = new System.Drawing.Point(12, 155);
-            this.resultOfFinalPositionLb.Name = "resultOfFinalPositionLb";
-            this.resultOfFinalPositionLb.Size = new System.Drawing.Size(71, 13);
-            this.resultOfFinalPositionLb.TabIndex = 16;
-            this.resultOfFinalPositionLb.Text = "Final position:";
-            this.resultOfFinalPositionLb.Visible = false;
-            // 
             // finalTimeLb
             // 
             this.finalTimeLb.AutoSize = true;
-            this.finalTimeLb.Location = new System.Drawing.Point(266, 43);
+            this.finalTimeLb.Location = new System.Drawing.Point(142, 43);
             this.finalTimeLb.Name = "finalTimeLb";
             this.finalTimeLb.Size = new System.Drawing.Size(69, 13);
             this.finalTimeLb.TabIndex = 17;
@@ -343,7 +316,7 @@
             // 
             // finalTimeTb
             // 
-            this.finalTimeTb.Location = new System.Drawing.Point(341, 40);
+            this.finalTimeTb.Location = new System.Drawing.Point(217, 40);
             this.finalTimeTb.Name = "finalTimeTb";
             this.finalTimeTb.Size = new System.Drawing.Size(46, 20);
             this.finalTimeTb.TabIndex = 18;
@@ -351,35 +324,74 @@
             // 
             // solveBt
             // 
-            this.solveBt.Location = new System.Drawing.Point(285, 77);
+            this.solveBt.Location = new System.Drawing.Point(15, 148);
             this.solveBt.Name = "solveBt";
             this.solveBt.Size = new System.Drawing.Size(111, 30);
             this.solveBt.TabIndex = 19;
             this.solveBt.Text = "Solve!";
             this.solveBt.UseVisualStyleBackColor = true;
+            this.solveBt.Click += new System.EventHandler(this.solveBt_Click);
             // 
-            // finalPositionResultTb
+            // vFinalPb
             // 
-            this.finalPositionResultTb.Location = new System.Drawing.Point(92, 155);
-            this.finalPositionResultTb.Name = "finalPositionResultTb";
-            this.finalPositionResultTb.ReadOnly = true;
-            this.finalPositionResultTb.Size = new System.Drawing.Size(100, 20);
-            this.finalPositionResultTb.TabIndex = 20;
-            this.finalPositionResultTb.Visible = false;
+            this.vFinalPb.Image = ((System.Drawing.Image)(resources.GetObject("vFinalPb.Image")));
+            this.vFinalPb.Location = new System.Drawing.Point(15, 74);
+            this.vFinalPb.Name = "vFinalPb";
+            this.vFinalPb.Size = new System.Drawing.Size(107, 23);
+            this.vFinalPb.TabIndex = 20;
+            this.vFinalPb.TabStop = false;
+            this.vFinalPb.Visible = false;
+            // 
+            // finalVLb
+            // 
+            this.finalVLb.AutoSize = true;
+            this.finalVLb.Location = new System.Drawing.Point(277, 74);
+            this.finalVLb.Name = "finalVLb";
+            this.finalVLb.Size = new System.Drawing.Size(66, 13);
+            this.finalVLb.TabIndex = 21;
+            this.finalVLb.Text = "Final V(m/s):";
+            this.finalVLb.Visible = false;
+            // 
+            // finalVTb
+            // 
+            this.finalVTb.Location = new System.Drawing.Point(352, 71);
+            this.finalVTb.Name = "finalVTb";
+            this.finalVTb.Size = new System.Drawing.Size(44, 20);
+            this.finalVTb.TabIndex = 22;
+            this.finalVTb.Visible = false;
+            // 
+            // accelLb
+            // 
+            this.accelLb.AutoSize = true;
+            this.accelLb.Location = new System.Drawing.Point(21, 43);
+            this.accelLb.Name = "accelLb";
+            this.accelLb.Size = new System.Drawing.Size(69, 13);
+            this.accelLb.TabIndex = 23;
+            this.accelLb.Text = "Acceleration:";
+            this.accelLb.Visible = false;
+            // 
+            // accelTb
+            // 
+            this.accelTb.Location = new System.Drawing.Point(96, 40);
+            this.accelTb.Name = "accelTb";
+            this.accelTb.Size = new System.Drawing.Size(44, 20);
+            this.accelTb.TabIndex = 24;
+            this.accelTb.Visible = false;
             // 
             // Equations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 329);
-            this.Controls.Add(this.finalPositionResultTb);
+            this.Controls.Add(this.accelTb);
+            this.Controls.Add(this.accelLb);
+            this.Controls.Add(this.finalVTb);
+            this.Controls.Add(this.finalVLb);
+            this.Controls.Add(this.vFinalPb);
             this.Controls.Add(this.solveBt);
             this.Controls.Add(this.finalTimeTb);
             this.Controls.Add(this.finalTimeLb);
-            this.Controls.Add(this.resultOfFinalPositionLb);
             this.Controls.Add(this.formulaFinalPositionPb);
-            this.Controls.Add(this.accelerationResultTb);
-            this.Controls.Add(this.resultAcLb);
             this.Controls.Add(this.formulaPb);
             this.Controls.Add(this.initMetersTb);
             this.Controls.Add(this.initMetersLb);
@@ -402,6 +414,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.eqGraph)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formulaPb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formulaFinalPositionPb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vFinalPb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -428,8 +441,6 @@
         private System.Windows.Forms.Label initMetersLb;
         private System.Windows.Forms.TextBox initMetersTb;
         private System.Windows.Forms.PictureBox formulaPb;
-        private System.Windows.Forms.Label resultAcLb;
-        private System.Windows.Forms.TextBox accelerationResultTb;
         private System.Windows.Forms.ToolStripMenuItem equationOfPositionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem equationOfHmaxToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem equationOfVelocityToolStripMenuItem;
@@ -437,10 +448,13 @@
         private System.Windows.Forms.ToolStripMenuItem equationOfTimeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem equationOfAccelerationToolStripMenuItem;
         private System.Windows.Forms.PictureBox formulaFinalPositionPb;
-        private System.Windows.Forms.Label resultOfFinalPositionLb;
         private System.Windows.Forms.Label finalTimeLb;
         private System.Windows.Forms.TextBox finalTimeTb;
         private System.Windows.Forms.Button solveBt;
-        private System.Windows.Forms.TextBox finalPositionResultTb;
+        private System.Windows.Forms.PictureBox vFinalPb;
+        private System.Windows.Forms.Label finalVLb;
+        private System.Windows.Forms.TextBox finalVTb;
+        private System.Windows.Forms.Label accelLb;
+        private System.Windows.Forms.TextBox accelTb;
     }
 }

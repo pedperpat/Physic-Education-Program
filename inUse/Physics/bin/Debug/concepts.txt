@@ -1,0 +1,19 @@
+Acceleration: Is the rate of change of velocity of an object. An object's acceleration is the net result of any and all forces acting 
+		on the object, as described by Newton's Second Law.The SI unit for acceleration is metre per second 
+		squared (m s-2). Accelerations are vector quantities (they have magnitude and direction) and add 
+		according to the parallelogram law. As a vector, the calculated net force is equal to the product of 
+		the object's mass (a scalar quantity) and its acceleration.
+
+Center of mass: Is the unique point where the weighted relative position of the distributed mass sums to zero or the point where
+		if a force is applied causes it to move in direction of force without rotation. The distribution of mass is 
+		balanced around the center of mass and the average of the weighted position coordinates of the distributed 
+		mass defines its coordinates. Calculations in mechanics are often simplified when formulated with respect to
+		 the center of mass.
+
+Force: Can cause an object with mass to change its velocity (which includes to begin moving from a state of rest), i.e., to accelerate. 
+		Force can also be described by intuitive concepts such as a push or a pull. A force has both magnitude and 
+		direction, making it a vector quantity. It is measured in the SI unit of newtons and represented by the symbol F.
+
+Mass: It is generally a measure of an object's resistance to changing its state of motion when a force is applied. It is determined by 
+		the strength of its mutual gravitational attraction to other bodies, its resistance to acceleration or directional 
+		changes, and in the theory of relativity gives the mass–energy content of a system. The SI unit of mass is the kilogram (kg).

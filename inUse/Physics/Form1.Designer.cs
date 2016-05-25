@@ -48,6 +48,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.helpBt = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -193,18 +194,18 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(626, 21);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(127, 13);
+            this.label8.Size = new System.Drawing.Size(131, 13);
             this.label8.TabIndex = 14;
-            this.label8.Text = "V: 0.2 Improved Skeleton";
+            this.label8.Text = "V: 0.3 Calculate equations";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(688, 34);
+            this.label9.Location = new System.Drawing.Point(692, 34);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 13);
             this.label9.TabIndex = 15;
-            this.label9.Text = "23/05/2016";
+            this.label9.Text = "24/05/2016";
             // 
             // label10
             // 
@@ -235,12 +236,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(626, 8);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(81, 13);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Current version:";
+            // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(758, 323);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.helpBt);
             this.Controls.Add(this.label10);
@@ -288,6 +300,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button helpBt;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label11;
     }
 }
 

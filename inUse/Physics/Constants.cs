@@ -11,14 +11,13 @@ using System.Windows.Forms;
 namespace Physics
 {
     public partial class Constants : Form
-    {
+    {   
         protected double[] variableValues = new double[10];
         //protected List<double> variableValues = new List<double>();
         public Constants()
         {
             InitializeComponent();
         }
-
         private void Constants_Load(object sender, EventArgs e)
         {
 

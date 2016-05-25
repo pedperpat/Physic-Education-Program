@@ -45,7 +45,6 @@ namespace Physics
         private void equationsBt_Click(object sender, EventArgs e)
         {
             Equations eq = new Equations();
-            //Close();
             Hide();
             eq.ShowDialog();
         }

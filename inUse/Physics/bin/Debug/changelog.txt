@@ -2,6 +2,9 @@
 Num.	Date		By / Changes
 -------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------
+v0.3    25/05/2016      Pedro Antonio Perez, added equations of position, acceleration and hmax. Added zoom of the text 
+                        at conceptsWF and preload of an example of concepts.
+
 v0.2    23/05/2016      Pedro Antonio Perez, Improved skeleton of the proyect.Added help screen with information of each
                         screen and a button to go to the desired screen. Added chart in EquationWF and
                         ProblemsReview to plot a graph with the result. Added normal mode for equation screen and

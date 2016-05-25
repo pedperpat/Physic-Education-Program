@@ -16,10 +16,10 @@ namespace Physics
         public ChangeLog()
         {
             InitializeComponent();
-            ReadFile();
+            ReadChangeLogFile();
         }
 
-        public void ReadFile()
+        public void ReadChangeLogFile()
         {
             try
             {
