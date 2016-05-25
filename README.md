@@ -2,17 +2,17 @@
 
 Repaso / Calculadora de física usando Windows Forms
 
-DONE! 1º Entrega: Crear el esqueleto principal del proyecto con pantalla de inicio, botones y varias ventanas contiguas que aparezcan al apretar dichos botones y cada ventana tenga diferentes opciones a elegir.
+---DONE!--- 1º Entrega: Crear el esqueleto principal del proyecto con pantalla de inicio, botones y varias ventanas contiguas que aparezcan al apretar dichos botones y cada ventana tenga diferentes opciones a elegir.
 
-DONE! 2º Entrega: Crear una ventana de presentación con mi nombre, la versión actual y el changelog actual. También meter contenido a cada ventana como términos y conceptos importantes sobre física.
+---DONE!--- 2º Entrega: Crear una ventana de presentación con mi nombre, la versión actual y el changelog actual. También meter contenido a cada ventana como términos y conceptos importantes sobre física.
 
-DONE! 3º Entrega: Añadir los valores de las constantes, para que al pulsar sobre el botón que ponga: "Ir a ver constantes..." lleve al usuario a la ventana con todas las constantes y poder buscar en un buscador la constante que necesite.
+---DONE!--- 3º Entrega: Añadir los valores de las constantes, para que al pulsar sobre el botón que ponga: "Ir a ver constantes..." lleve al usuario a la ventana con todas las constantes y poder buscar en un buscador la constante que necesite.
 
-DONE! 4º Entrega: Hacer que vaya calculando pequeñas ecuaciones de posición inicial,posición final, Hmax,etc. El usuario introducirá en un textbox los valores a partir de los cuales serán calculadas las ecuaciones. El resultado será visible a través de otro textbox de solo lectura. Además hacer correcciones y comprobar que no se puedan introduzcan datos de otro tipo. 
+---DONE---! 4º Entrega: Hacer que vaya calculando pequeñas ecuaciones de posición inicial,posición final, Hmax,etc. El usuario introducirá en un textbox los valores a partir de los cuales serán calculadas las ecuaciones. El resultado será visible a través de otro textbox de solo lectura. Además hacer correcciones y comprobar que no se puedan introduzcan datos de otro tipo. 
 
-5º Entrega: Añadir muchas más ecuaciones de física como tiros parabólicos, energía cinética, volumen y presiones.
+5º Entrega: En la misma ventana de la solución a la ecuación,hacer mediante un chart que dibuje la gráfica de la ecuación si puede ser posible.
 
-6º Entrega: En la misma ventana de la solución a la ecuación,hacer mediante un canvas que dibuje la gráfica de la ecuación si es necesario.
+6º Entrega: Añadir muchas más ecuaciones de física como tiros parabólicos, energía cinética, volumen y presiones.
 
 7º Entrega: Una vez obtenida la solución a la ecuación que el usuario ha querido saber, se activará un botón para que pueda(en el caso de que quiera) exportar dicha solución a un archivo de texto plano.
 
