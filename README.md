@@ -18,7 +18,7 @@ Repaso / Calculadora de física usando Windows Forms
 
 8º Entrega: En la misma ventana de elegir el tipo de ecuación, una vez seleccionada la ecuación que se quiere obtener la solución, dar a elegir entre introducir los datos a mano o cargar un fichero de texto con los datos necesarios en el formato correcto.
 
-9º Entrega: Hacer un desplegable con el historial de todos los problemas que han sido resueltos.
+9º Entrega: Hacer una clase llamada "Historical" en la cual mostrar el historial de todas las ecuaciones resueltas hasta la fecha. 
 
 10º Entrega: Pasar todo texto de botones, menús, conceptos y términos a inglés y a alemán para hacerlo multilingüe.(1)
 
