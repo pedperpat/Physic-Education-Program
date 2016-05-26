@@ -42,20 +42,21 @@
             this.label7 = new System.Windows.Forms.Label();
             this.spanishLan = new System.Windows.Forms.RadioButton();
             this.englishLan = new System.Windows.Forms.RadioButton();
-            this.germanLan = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.helpBt = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.toVideosBt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(206, 21);
+            this.label1.Location = new System.Drawing.Point(194, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(373, 21);
             this.label1.TabIndex = 0;
@@ -178,25 +179,14 @@
             this.englishLan.Text = "English";
             this.englishLan.UseVisualStyleBackColor = true;
             // 
-            // germanLan
-            // 
-            this.germanLan.AutoSize = true;
-            this.germanLan.Location = new System.Drawing.Point(629, 299);
-            this.germanLan.Name = "germanLan";
-            this.germanLan.Size = new System.Drawing.Size(62, 17);
-            this.germanLan.TabIndex = 13;
-            this.germanLan.TabStop = true;
-            this.germanLan.Text = "German";
-            this.germanLan.UseVisualStyleBackColor = true;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(626, 21);
+            this.label8.Location = new System.Drawing.Point(573, 21);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(131, 13);
+            this.label8.Size = new System.Drawing.Size(184, 13);
             this.label8.TabIndex = 14;
-            this.label8.Text = "V: 0.3 Calculate equations";
+            this.label8.Text = "V: 0.5 Export solutions, view historical";
             // 
             // label9
             // 
@@ -205,7 +195,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 13);
             this.label9.TabIndex = 15;
-            this.label9.Text = "24/05/2016";
+            this.label9.Text = "26/05/2016";
             // 
             // label10
             // 
@@ -245,6 +235,25 @@
             this.label11.TabIndex = 19;
             this.label11.Text = "Current version:";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(326, 213);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(76, 13);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "Video reviews:";
+            // 
+            // toVideosBt
+            // 
+            this.toVideosBt.Location = new System.Drawing.Point(319, 243);
+            this.toVideosBt.Name = "toVideosBt";
+            this.toVideosBt.Size = new System.Drawing.Size(99, 38);
+            this.toVideosBt.TabIndex = 21;
+            this.toVideosBt.Text = "Go to videos";
+            this.toVideosBt.UseVisualStyleBackColor = true;
+            this.toVideosBt.Click += new System.EventHandler(this.toVideosBt_Click);
+            // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,13 +261,14 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(758, 323);
+            this.Controls.Add(this.toVideosBt);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.helpBt);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.germanLan);
             this.Controls.Add(this.englishLan);
             this.Controls.Add(this.spanishLan);
             this.Controls.Add(this.label7);
@@ -294,13 +304,14 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RadioButton spanishLan;
         private System.Windows.Forms.RadioButton englishLan;
-        private System.Windows.Forms.RadioButton germanLan;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button helpBt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button toVideosBt;
     }
 }
 

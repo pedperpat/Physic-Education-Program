@@ -62,5 +62,12 @@ namespace Physics
             Hide();
             changelog.ShowDialog();
         }
+
+        private void toVideosBt_Click(object sender, EventArgs e)
+        {
+            VideoReview video = new VideoReview();
+            Hide();
+            video.ShowDialog();
+        }
     }
 }

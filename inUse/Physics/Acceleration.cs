@@ -75,8 +75,8 @@ namespace Physics
                     + "Final time = " + finalT + " | Initial velocity = " + initV + " | " +
                     "Final velocity = " + finalV + " | Result: " + result + "\n");
                     writer.WriteLine();
-                    writer.Write("-------------------------------------------------------------"+
-                        "-----------------------------------------------");
+                    writer.Write("---------------------------------------------------------------------" +
+                        "--------------------------------------------------------------------------------");
                     writer.WriteLine();
                 }
             }
@@ -84,9 +84,10 @@ namespace Physics
 
         // Export to a file as a history of solved acceleration equations
         // Code to test
+        // Really useless, I dont call this method.
         private void saveFileDialog_FileOk(object sender, CancelEventArgs e)
         {
-            //Method nº1 of export
+            //Method nº1 of export *WORKING!*
             //################################################################
             // Get all values of the textboxes as a string
             string initT = initTimeTb.Text;
@@ -107,7 +108,7 @@ namespace Physics
                 }
             }
             //Method nº2 of export 
-            //##################################################################
+            //################################################################
 
             // Get all values of the textboxes as a string
             //string initT = initTimeTb.Text;
@@ -137,6 +138,57 @@ namespace Physics
             // in a future the load of historical results will be at a new windows forms class called solved
             // equations and it will load al the results that are recorded in a file. Such as acceleration,
             // position, energy,etc... all loaded at the richtextbox.
+
+            // Hide elements when click the menustrip
+            initTimeTb.Visible = false;
+            initTimeLb.Visible = false;
+            initMetersLb.Visible = false;
+            finalTimeLb.Visible = false;
+            finalTimeTb.Visible = false;
+            initMetersTb.Visible = false;
+            initMetersLb.Visible = false;
+            finalTimeTb.Visible = false;
+            finalTimeLb.Visible = false;
+            resultLb.Visible = false;
+            resultTb.Visible = false;
+
+            // Show elements when click the menustrip
+            historicalLb.Visible = true;
+            historicalRTB.Visible = true;
+            backBt.Visible = true;
+
+            
+                
+            OpenFileDialog loadHistorical = new OpenFileDialog();
+
+            // Initialize the filter to look for text files.
+            loadHistorical.Filter = "PHY Files|*.phy";
+
+            // If the user selected a file, load its contents into the RichTextBox. 
+            if (loadHistorical.ShowDialog() == DialogResult.OK)
+                historicalRTB.LoadFile(loadHistorical.FileName,
+                RichTextBoxStreamType.PlainText);
+        }
+
+        private void backBt_Click(object sender, EventArgs e)
+        {
+            // Hide elements
+            backBt.Visible = false;
+            historicalLb.Visible = false;
+            historicalRTB.Visible = false;
+
+            // Show elements
+            initTimeTb.Visible = true;
+            initMetersLb.Visible = true;
+            finalTimeLb.Visible = true;
+            finalTimeTb.Visible = true;
+            initMetersTb.Visible = true;
+            initMetersLb.Visible = true;
+            finalTimeTb.Visible = true;
+            finalTimeLb.Visible = true;
+            resultLb.Visible = true;
+            initTimeLb.Visible = true;
+            resultTb.Visible = true;
         }
     }
 }

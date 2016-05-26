@@ -49,6 +49,9 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.openHistorial = new System.Windows.Forms.OpenFileDialog();
+            this.historicalRTB = new System.Windows.Forms.RichTextBox();
+            this.historicalLb = new System.Windows.Forms.Label();
+            this.backBt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.formulaPb)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -209,11 +212,45 @@
             // 
             this.saveFileDialog.DefaultExt = "phy";
             // 
+            // historicalRTB
+            // 
+            this.historicalRTB.Location = new System.Drawing.Point(46, 56);
+            this.historicalRTB.Name = "historicalRTB";
+            this.historicalRTB.Size = new System.Drawing.Size(471, 228);
+            this.historicalRTB.TabIndex = 29;
+            this.historicalRTB.Text = "";
+            this.historicalRTB.Visible = false;
+            // 
+            // historicalLb
+            // 
+            this.historicalLb.AutoSize = true;
+            this.historicalLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.historicalLb.Location = new System.Drawing.Point(42, 33);
+            this.historicalLb.Name = "historicalLb";
+            this.historicalLb.Size = new System.Drawing.Size(89, 20);
+            this.historicalLb.TabIndex = 30;
+            this.historicalLb.Text = "Historical:";
+            this.historicalLb.Visible = false;
+            // 
+            // backBt
+            // 
+            this.backBt.Location = new System.Drawing.Point(239, 290);
+            this.backBt.Name = "backBt";
+            this.backBt.Size = new System.Drawing.Size(91, 33);
+            this.backBt.TabIndex = 31;
+            this.backBt.Text = "Back";
+            this.backBt.UseVisualStyleBackColor = true;
+            this.backBt.Visible = false;
+            this.backBt.Click += new System.EventHandler(this.backBt_Click);
+            // 
             // Acceleration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 353);
+            this.Controls.Add(this.backBt);
+            this.Controls.Add(this.historicalLb);
+            this.Controls.Add(this.historicalRTB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.resultTb);
             this.Controls.Add(this.resultLb);
@@ -261,5 +298,8 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
         private System.Windows.Forms.OpenFileDialog openHistorial;
+        private System.Windows.Forms.RichTextBox historicalRTB;
+        private System.Windows.Forms.Label historicalLb;
+        private System.Windows.Forms.Button backBt;
     }
 }
