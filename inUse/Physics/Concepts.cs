@@ -48,6 +48,7 @@ namespace Physics
                     //Simplified way to load a formatted text file.
                     TextReader reader = File.OpenText(@"concepts.txt");
                     conceptsRTB.Text = reader.ReadToEnd();
+                    reader.Close();
                 }
             }
             catch (PathTooLongException)

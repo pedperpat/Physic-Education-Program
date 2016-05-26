@@ -33,7 +33,7 @@ namespace Physics
                     TextReader reader = File.OpenText(@"changelog.txt");
                     changeLogRTB.Text = reader.ReadToEnd();
 
-
+                    reader.Close();
                     // Old way to load a text file and show at the richtextbox.
                     //StreamReader inFile = new StreamReader("changelog.txt");
 

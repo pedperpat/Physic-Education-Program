@@ -1,9 +1,13 @@
-
 Num.	Date		By / Changes
 -------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------
-v0.3    25/05/2016      Pedro Antonio Perez, added equations of position, acceleration and hmax. Added zoom of the text 
-                        at conceptsWF and preload of an example of concepts.
+v0.5    26/05/2016      Pedro Antonio Perez, corrected export option by now.
+
+v0.4    25/05/2016      Pedro Antonio Perez, simplified all the equations by one per each class and added export option
+                        to export all the solutions of the equations.
+
+v0.3    24/05/2016      Pedro Antonio Perez, load concepts from a file as an example ,zoom text of concepts when you 
+                        click zoom+ and zoom- buttons.Also calculate acceleration and velocity and reedited Equations.cs.
 
 v0.2    23/05/2016      Pedro Antonio Perez, Improved skeleton of the proyect.Added help screen with information of each
                         screen and a button to go to the desired screen. Added chart in EquationWF and
