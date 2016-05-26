@@ -10,7 +10,7 @@ Repaso / Calculadora de física usando Windows Forms
 
 ---DONE---! 4º Entrega: Hacer que vaya calculando pequeñas ecuaciones de posición inicial,posición final, Hmax,etc. El usuario introducirá en un textbox los valores a partir de los cuales serán calculadas las ecuaciones. El resultado será visible a través de otro textbox de solo lectura. Además hacer correcciones y comprobar que no se puedan introduzcan datos de otro tipo. 
 
-5º Entrega: Una vez obtenida la solución a la ecuación que el usuario ha querido saber, se activará un botón para que pueda(en el caso de que quiera) exportar dicha solución a un archivo de texto plano.
+---DONE---! 5º Entrega: Una vez obtenida la solución a la ecuación que el usuario ha querido saber, se activará un botón para que pueda(en el caso de que quiera) exportar dicha solución a un archivo de texto plano.
 
 6º Entrega: En la misma ventana de la solución a la ecuación,hacer mediante un chart que dibuje la gráfica de la ecuación si puede ser posible.
 
