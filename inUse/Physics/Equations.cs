@@ -78,11 +78,18 @@ namespace Physics
             ac.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void toHmaxBt_Click(object sender, EventArgs e)
         {
             InitialVandHmax initV = new InitialVandHmax();
             Hide();
             initV.ShowDialog();
+        }
+
+        private void toVelocityBt_Click(object sender, EventArgs e)
+        {
+            Velocity v = new Velocity();
+            Hide();
+            v.ShowDialog();
         }
     }
 }

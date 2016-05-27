@@ -17,9 +17,9 @@ C:\Users\Pedro Antonio\Documents\Visual Studio 2015\Projects\Physics\Physics\bin
 C:\Users\Pedro Antonio\Documents\Visual Studio 2015\Projects\Physics\Physics\obj\Debug\Physics.exe
 C:\Users\Pedro Antonio\Documents\Visual Studio 2015\Projects\Physics\Physics\obj\Debug\Physics.pdb
 C:\Users\Pedro Antonio\Documents\Visual Studio 2015\Projects\Physics\Physics\obj\Debug\Physics.csprojResolveAssemblyReference.cache
-C:\Users\Pedro Antonio\documents\visual studio 2015\Projects\Physics\Physics\obj\Debug\Physics.VideoReview.resources
 C:\Users\Pedro Antonio\documents\visual studio 2015\Projects\Physics\Physics\bin\Debug\Interop.ShockwaveFlashObjects.dll
 C:\Users\Pedro Antonio\documents\visual studio 2015\Projects\Physics\Physics\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
 C:\Users\Pedro Antonio\documents\visual studio 2015\Projects\Physics\Physics\obj\Debug\Interop.ShockwaveFlashObjects.dll
 C:\Users\Pedro Antonio\documents\visual studio 2015\Projects\Physics\Physics\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
 C:\Users\Pedro Antonio\documents\visual studio 2015\Projects\Physics\Physics\obj\Debug\Physics.csproj.ResolveComReference.cache
+C:\Users\Pedro Antonio\documents\visual studio 2015\Projects\Physics\Physics\obj\Debug\Physics.VideoReviewForm.resources

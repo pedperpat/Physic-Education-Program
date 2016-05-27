@@ -182,11 +182,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(573, 21);
+            this.label8.Location = new System.Drawing.Point(613, 21);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(184, 13);
+            this.label8.Size = new System.Drawing.Size(144, 13);
             this.label8.TabIndex = 14;
-            this.label8.Text = "V: 0.5 Export solutions, view historical";
+            this.label8.Text = "V: 0.5 More equations added";
             // 
             // label9
             // 
@@ -195,7 +195,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 13);
             this.label9.TabIndex = 15;
-            this.label9.Text = "26/05/2016";
+            this.label9.Text = "27/05/2016";
             // 
             // label10
             // 

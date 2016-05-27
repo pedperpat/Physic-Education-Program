@@ -120,4 +120,7 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="conceptsRTB.Text" xml:space="preserve">
+    <value>Your can write and save your own concepts for study. Also you can zoom the text if you see it narrow. First for an example, go to file and click exmple concepts. And there is a search to input a word and search it. </value>
+  </data>
 </root>

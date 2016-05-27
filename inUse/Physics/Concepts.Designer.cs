@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Concepts));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.searchBox = new System.Windows.Forms.TextBox();
@@ -37,13 +38,13 @@
             this.backBt = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.saveActualConceptsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadConceptsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveConceptFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.writeConceptsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.conceptsRTB = new System.Windows.Forms.RichTextBox();
+            this.loadConceptsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadConceptsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveConceptFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.conceptsRTB = new System.Windows.Forms.RichTextBox();
             this.zoomMore = new System.Windows.Forms.Button();
             this.zoomLess = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
@@ -136,12 +137,37 @@
             this.saveActualConceptsToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.saveActualConceptsToolStripMenuItem.Text = "File";
             // 
+            // writeConceptsToolStripMenuItem
+            // 
+            this.writeConceptsToolStripMenuItem.Name = "writeConceptsToolStripMenuItem";
+            this.writeConceptsToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.writeConceptsToolStripMenuItem.Text = "Write concepts";
+            this.writeConceptsToolStripMenuItem.Click += new System.EventHandler(this.writeConceptsToolStripMenuItem_Click);
+            // 
             // loadConceptsToolStripMenuItem
             // 
             this.loadConceptsToolStripMenuItem.Name = "loadConceptsToolStripMenuItem";
             this.loadConceptsToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.loadConceptsToolStripMenuItem.Text = "Example concepts";
             this.loadConceptsToolStripMenuItem.Click += new System.EventHandler(this.loadConceptsToolStripMenuItem_Click);
+            // 
+            // loadConceptsToolStripMenuItem1
+            // 
+            this.loadConceptsToolStripMenuItem1.Name = "loadConceptsToolStripMenuItem1";
+            this.loadConceptsToolStripMenuItem1.Size = new System.Drawing.Size(169, 22);
+            this.loadConceptsToolStripMenuItem1.Text = "Load concepts";
+            // 
+            // saveConceptFileToolStripMenuItem
+            // 
+            this.saveConceptFileToolStripMenuItem.Name = "saveConceptFileToolStripMenuItem";
+            this.saveConceptFileToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.saveConceptFileToolStripMenuItem.Text = "Save concepts";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
             // 
             // helpToolStripMenuItem
             // 
@@ -150,38 +176,13 @@
             this.helpToolStripMenuItem.Text = "Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
-            // saveConceptFileToolStripMenuItem
-            // 
-            this.saveConceptFileToolStripMenuItem.Name = "saveConceptFileToolStripMenuItem";
-            this.saveConceptFileToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.saveConceptFileToolStripMenuItem.Text = "Save concepts";
-            // 
-            // writeConceptsToolStripMenuItem
-            // 
-            this.writeConceptsToolStripMenuItem.Name = "writeConceptsToolStripMenuItem";
-            this.writeConceptsToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.writeConceptsToolStripMenuItem.Text = "Write concepts";
-            this.writeConceptsToolStripMenuItem.Click += new System.EventHandler(this.writeConceptsToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            // 
             // conceptsRTB
             // 
             this.conceptsRTB.Location = new System.Drawing.Point(72, 114);
             this.conceptsRTB.Name = "conceptsRTB";
             this.conceptsRTB.Size = new System.Drawing.Size(701, 262);
             this.conceptsRTB.TabIndex = 9;
-            this.conceptsRTB.Text = "";
-            // 
-            // loadConceptsToolStripMenuItem1
-            // 
-            this.loadConceptsToolStripMenuItem1.Name = "loadConceptsToolStripMenuItem1";
-            this.loadConceptsToolStripMenuItem1.Size = new System.Drawing.Size(169, 22);
-            this.loadConceptsToolStripMenuItem1.Text = "Load concepts";
+            this.conceptsRTB.Text = resources.GetString("conceptsRTB.Text");
             // 
             // zoomMore
             // 

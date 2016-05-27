@@ -40,6 +40,7 @@
             this.conceptsListBox = new System.Windows.Forms.ListBox();
             this.problemBt = new System.Windows.Forms.Button();
             this.conceptBt = new System.Windows.Forms.Button();
+            this.backBt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -181,11 +182,22 @@
             this.conceptBt.UseVisualStyleBackColor = true;
             this.conceptBt.Click += new System.EventHandler(this.conceptBt_Click);
             // 
+            // backBt
+            // 
+            this.backBt.Location = new System.Drawing.Point(486, 10);
+            this.backBt.Name = "backBt";
+            this.backBt.Size = new System.Drawing.Size(75, 23);
+            this.backBt.TabIndex = 12;
+            this.backBt.Text = "Back";
+            this.backBt.UseVisualStyleBackColor = true;
+            this.backBt.Click += new System.EventHandler(this.backBt_Click);
+            // 
             // HelpScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(573, 314);
+            this.Controls.Add(this.backBt);
             this.Controls.Add(this.conceptBt);
             this.Controls.Add(this.problemBt);
             this.Controls.Add(this.conceptsListBox);
@@ -219,5 +231,6 @@
         private System.Windows.Forms.ListBox conceptsListBox;
         private System.Windows.Forms.Button problemBt;
         private System.Windows.Forms.Button conceptBt;
+        private System.Windows.Forms.Button backBt;
     }
 }

@@ -65,7 +65,7 @@ namespace Physics
 
         private void toVideosBt_Click(object sender, EventArgs e)
         {
-            VideoReview video = new VideoReview();
+            VideoReviewForm video = new VideoReviewForm();
             Hide();
             video.ShowDialog();
         }

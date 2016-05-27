@@ -11,11 +11,13 @@ using System.Windows.Forms;
 
 namespace Physics
 {
-    public partial class VideoReview : Form
+    public partial class VideoReviewForm : Form
     {
-        public VideoReview()
+
+        public VideoReviewForm()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void clickLinkLb_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -35,5 +37,7 @@ namespace Physics
             Hide();
             mainScreen.ShowDialog();
         }
+
+        
     }
 }

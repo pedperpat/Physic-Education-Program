@@ -49,5 +49,12 @@ namespace Physics
             Hide();
             concepts.ShowDialog();
         }
+
+        private void backBt_Click(object sender, EventArgs e)
+        {
+            MainScreen ms = new MainScreen();
+            Hide();
+            ms.ShowDialog();
+        }
     }
 }

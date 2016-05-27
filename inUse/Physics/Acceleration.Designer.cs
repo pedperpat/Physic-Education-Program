@@ -214,7 +214,7 @@
             // 
             // historicalRTB
             // 
-            this.historicalRTB.Location = new System.Drawing.Point(46, 56);
+            this.historicalRTB.Location = new System.Drawing.Point(46, 33);
             this.historicalRTB.Name = "historicalRTB";
             this.historicalRTB.Size = new System.Drawing.Size(471, 228);
             this.historicalRTB.TabIndex = 29;
