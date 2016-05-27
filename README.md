@@ -12,9 +12,9 @@ Repaso / Calculadora de física usando Windows Forms
 
 ---DONE---! 5º Entrega: Una vez obtenida la solución a la ecuación que el usuario ha querido saber, se activará un botón para que pueda(en el caso de que quiera) exportar dicha solución a un archivo de texto plano.
 
-6º Entrega: En la misma ventana de la solución a la ecuación,hacer mediante un chart que dibuje la gráfica de la ecuación si puede ser posible.
+6º Entrega: Hacer una clase llamada "Historical" en la cual mostrar el historial de todas las ecuaciones resueltas hasta la fecha.
 
-7º Entrega: Hacer una clase llamada "Historical" en la cual mostrar el historial de todas las ecuaciones resueltas hasta la fecha.
+7º Entrega: En la misma ventana de la solución a la ecuación,hacer mediante un chart que dibuje la gráfica de la ecuación si puede ser posible.
 
 8º Entrega: En la misma ventana de elegir el tipo de ecuación, una vez seleccionada la ecuación que se quiere obtener la solución, dar a elegir entre introducir los datos a mano o cargar un fichero de texto con los datos necesarios en el formato correcto.
 
