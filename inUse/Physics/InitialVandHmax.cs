@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,11 +28,20 @@ namespace Physics
         // Initial V method to get the initial velocity when a bullet it's shooted.
         public string GetInitialV()
         {
-            double v0 = 0; double vf = 0;
-            double totalTime = Convert.ToDouble(totalTimeTb.Text) / 2;
-            v0 = G * totalTime; // Aplying V equation "vf = vo + G * t"
-            resultVoTb.Text = Convert.ToString(v0)+" m/s";
-            return resultVoTb.Text;
+            if((totalTimeTb.TextLength == 0) || (System.Text.RegularExpressions.Regex.IsMatch(totalTimeTb.Text, "[^0-9]")))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                totalTimeTb.Text.Remove(totalTimeTb.Text.Length - 1);
+                return totalTimeTb.Text;
+            }
+            else
+            {
+                double v0 = 0; double vf = 0;
+                double totalTime = Convert.ToDouble(totalTimeTb.Text) / 2;
+                v0 = G * totalTime; // Aplying V equation "vf = vo + G * t"
+                resultVoTb.Text = Convert.ToString(v0) + " m/s";
+                return resultVoTb.Text;
+            }
         }
 
         // Max height that the proyectile can reach.
@@ -59,8 +69,17 @@ namespace Physics
 
         private void solveHmaxBt_Click(object sender, EventArgs e)
         {
-            GetHmax();
-            resultHmaxTb.Visible = true;
+            if(totalTimeTb.TextLength == 0)
+            {
+                totalTimeTb.Text = "Enter valid time";
+            }
+            else
+            {
+                GetHmax();
+                resultHmaxTb.Visible = true;
+                SaveHistoricalFile();
+            }
+           
         }
 
         private void backBt_Click(object sender, EventArgs e)
@@ -68,6 +87,46 @@ namespace Physics
             Equations eq = new Equations();
             Hide();
             eq.ShowDialog();
+        }
+
+        public void SaveHistoricalFile()
+        {
+            // Grab all the textbox values
+            string totalTime = totalTimeTb.Text;
+            string v0 = resultVoTb.Text;
+            string hmax = resultHmaxTb.Text;
+
+            try
+            {
+                string fileName = "historical.phy";
+                using (FileStream fs = new FileStream(fileName, FileMode.Append, FileAccess.Write))
+                using (StreamWriter writer = new StreamWriter(fs))
+                {
+                    writer.Write("Vo and Hmax Equation:");
+                    writer.WriteLine();
+                    writer.Write("\t Total Time = " + totalTime + " | "
+                    + "Initial velocity = " + v0 + " | Hmax = " + hmax + "\n");
+                    writer.WriteLine();
+                    writer.Write("---------------------------------------------------------------------" +
+                        "--------------------------------------------------------------------------------");
+                    writer.WriteLine();
+                }
+                //StreamWriter writer = new StreamWriter("historical.phy");
+
+
+            }
+            catch (PathTooLongException)
+            {
+                Console.WriteLine("Path too long.");
+            }
+            catch (IOException ex)
+            {
+                Console.WriteLine("Input/Ouput error: {0}", ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Unexpected error: {0}", ex.Message);
+            }
         }
     }
 }

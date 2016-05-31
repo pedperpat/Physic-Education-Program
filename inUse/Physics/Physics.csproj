@@ -142,6 +142,9 @@
     <EmbeddedResource Include="Constants.resx">
       <DependentUpon>Constants.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Energy.resx">
+      <DependentUpon>Energy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Equations.resx">
       <DependentUpon>Equations.cs</DependentUpon>
     </EmbeddedResource>

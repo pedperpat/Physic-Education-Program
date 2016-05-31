@@ -25,29 +25,55 @@ namespace Physics
          * */
         public void SolveAccelerationEq()
         {
-            double vInitial = 0; double vFinal = 0;
-            double tInitial = 0; double tFinal = 0;
-            double acceleration;
-            if (Convert.ToDouble(finalTimeTb.Text) >= 0)
-                tFinal = Convert.ToDouble(finalTimeTb.Text);
-            if (Convert.ToDouble(initTimeTb.Text) >= 0)
-                tInitial = Convert.ToDouble(initTimeTb.Text);
-            //if (Convert.ToDouble(finalVTb) >= 0) // No sense,may be a negative velocity
-            vFinal = Convert.ToDouble(finalVTb.Text);
-            //if (Convert.ToDouble(initTimeTb) >= 0) // No sense,may be a negative velocity
-            vInitial = Convert.ToDouble(initMetersTb.Text);
+            // Checks if at the textboxes is text and the text is a digit and is at least 1 character lenght.
+            if ((initMetersTb.TextLength == 0) || (initTimeTb.TextLength == 0) || 
+                (finalVTb.TextLength == 0) || (finalTimeTb.TextLength == 0) ||
+                (System.Text.RegularExpressions.Regex.IsMatch(initTimeTb.Text, "[^0-9]")) ||
+                (System.Text.RegularExpressions.Regex.IsMatch(finalTimeTb.Text, "[^0-9]")) ||
+                (System.Text.RegularExpressions.Regex.IsMatch(initMetersTb.Text, "[^0-9]")) ||
+                (System.Text.RegularExpressions.Regex.IsMatch(finalVTb.Text, "[^0-9]")))
+            {
+                MessageBox.Show("Please enter only numbers.");
+            }
+            else
+            {
+                double vInitial = 0; double vFinal = 0;
+                double tInitial = 0; double tFinal = 0;
+                double acceleration;
+                if (Convert.ToDouble(finalTimeTb.Text) >= 0)
+                    tFinal = Convert.ToDouble(finalTimeTb.Text);
+                if (Convert.ToDouble(initTimeTb.Text) >= 0)
+                    tInitial = Convert.ToDouble(initTimeTb.Text);
+                //if (Convert.ToDouble(finalVTb) >= 0) // No sense,may be a negative velocity
+                vFinal = Convert.ToDouble(finalVTb.Text);
+                //if (Convert.ToDouble(initTimeTb) >= 0) // No sense,may be a negative velocity
+                vInitial = Convert.ToDouble(initMetersTb.Text);
 
-            double deltaOfV = vFinal - vInitial;
-            double deltaOfT = tFinal - tInitial;
-            acceleration = deltaOfV / deltaOfT;
+                double deltaOfV = vFinal - vInitial;
+                double deltaOfT = tFinal - tInitial;
+                acceleration = deltaOfV / deltaOfT;
 
-            resultTb.Text = Convert.ToString(acceleration) + " m/s";
+                resultTb.Text = Convert.ToString(acceleration) + " m/s";
+            }
         }
 
         private void solveBt_Click(object sender, EventArgs e)
         {
-            SolveAccelerationEq();
-            SaveHistoricalFile();
+            // If at textboxes is text and the text isn't a digit, prints message.
+            if(((initMetersTb.TextLength == 0) || (initTimeTb.TextLength == 0) ||
+                (finalVTb.TextLength == 0) || (finalTimeTb.TextLength == 0) ||
+                (System.Text.RegularExpressions.Regex.IsMatch(initTimeTb.Text, "[^0-9]")) ||
+                (System.Text.RegularExpressions.Regex.IsMatch(finalTimeTb.Text, "[^0-9]")) ||
+                (System.Text.RegularExpressions.Regex.IsMatch(initMetersTb.Text, "[^0-9]")) ||
+                (System.Text.RegularExpressions.Regex.IsMatch(finalVTb.Text, "[^0-9]"))))
+            {
+                resultTb.Text = "Enter valid time";
+            }
+            else
+            {
+                SolveAccelerationEq();
+                SaveHistoricalFile();
+            }
         }
 
         private void exportResultToAFileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -233,6 +259,20 @@ namespace Physics
             {
                 Console.WriteLine("Unexpected error: {0}", ex.Message);
             }
+        }
+
+        private void backbutton_Click(object sender, EventArgs e)
+        {
+            MainScreen ms = new MainScreen();
+            Hide();
+            ms.ShowDialog();
+        }
+
+        private void mainScreenBt_Click(object sender, EventArgs e)
+        {
+            MainScreen ms = new MainScreen();
+            Hide();
+            ms.ShowDialog();
         }
     }
 }

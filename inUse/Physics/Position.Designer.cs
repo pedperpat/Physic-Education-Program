@@ -33,6 +33,8 @@
             this.solveBt = new System.Windows.Forms.Button();
             this.resultLb = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.backBt = new System.Windows.Forms.Button();
+            this.toMainBt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.formulaFinalPositionPb)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +50,7 @@
             // 
             // solveBt
             // 
-            this.solveBt.Location = new System.Drawing.Point(259, 286);
+            this.solveBt.Location = new System.Drawing.Point(289, 285);
             this.solveBt.Name = "solveBt";
             this.solveBt.Size = new System.Drawing.Size(113, 43);
             this.solveBt.TabIndex = 27;
@@ -72,11 +74,33 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 29;
             // 
+            // backBt
+            // 
+            this.backBt.Location = new System.Drawing.Point(583, 320);
+            this.backBt.Name = "backBt";
+            this.backBt.Size = new System.Drawing.Size(101, 39);
+            this.backBt.TabIndex = 30;
+            this.backBt.Text = "Go back";
+            this.backBt.UseVisualStyleBackColor = true;
+            this.backBt.Click += new System.EventHandler(this.backBt_Click);
+            // 
+            // toMainBt
+            // 
+            this.toMainBt.Location = new System.Drawing.Point(583, 275);
+            this.toMainBt.Name = "toMainBt";
+            this.toMainBt.Size = new System.Drawing.Size(101, 39);
+            this.toMainBt.TabIndex = 31;
+            this.toMainBt.Text = "Go to main";
+            this.toMainBt.UseVisualStyleBackColor = true;
+            this.toMainBt.Click += new System.EventHandler(this.toMainBt_Click);
+            // 
             // Position
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(718, 371);
+            this.Controls.Add(this.toMainBt);
+            this.Controls.Add(this.backBt);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.resultLb);
             this.Controls.Add(this.solveBt);
@@ -96,5 +120,7 @@
         private System.Windows.Forms.Button solveBt;
         private System.Windows.Forms.Label resultLb;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button backBt;
+        private System.Windows.Forms.Button toMainBt;
     }
 }

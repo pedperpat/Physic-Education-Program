@@ -42,35 +42,6 @@ namespace Physics
             help.ShowDialog();
         }
 
-        // Final position equation,with know values.
-        // DELAYED: Lack of parameters at the equationsWF.cs
-        //public void SolvePositionEq()
-        //{
-        //    double posInitial = 0; double vInitial = 0;
-        //    double tInit = 0; double tFinal = 0;
-
-        //    posInitial = Convert.ToDouble();
-        //}
-
-        // Acceleration equation, vInitial, vFinal, tInitial, tFinal
-        
-
-        //public void VelocityEquation()
-        //{
-        //    double vFinal;
-        //    double acceleration = 0;
-        //    double vInitial = 0;
-        //    double t = 0;
-
-        //    vInitial = Convert.ToDouble(initMetersTb.Text);
-        //    acceleration = Convert.ToDouble(accelTb.Text);
-        //    t = Convert.ToDouble(finalTimeTb.Text);
-
-        //    vFinal = vInitial * acceleration * t;
-
-        //    resultTb.Text = Convert.ToString(vFinal) + " m/s";
-        //}
-
         private void ToAccelerationBt_Click(object sender, EventArgs e)
         {
             Acceleration ac = new Acceleration();
@@ -91,5 +62,14 @@ namespace Physics
             Hide();
             v.ShowDialog();
         }
+
+        private void energyBt_Click(object sender, EventArgs e)
+        {
+            Energy energy = new Energy();
+            Hide();
+            energy.ShowDialog();
+        }
+
+
     }
 }

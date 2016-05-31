@@ -32,6 +32,7 @@
             this.ToAccelerationBt = new System.Windows.Forms.Button();
             this.toHmaxBt = new System.Windows.Forms.Button();
             this.toVelocityBt = new System.Windows.Forms.Button();
+            this.energyBt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // backBt
@@ -74,11 +75,22 @@
             this.toVelocityBt.UseVisualStyleBackColor = true;
             this.toVelocityBt.Click += new System.EventHandler(this.toVelocityBt_Click);
             // 
+            // energyBt
+            // 
+            this.energyBt.Location = new System.Drawing.Point(315, 173);
+            this.energyBt.Name = "energyBt";
+            this.energyBt.Size = new System.Drawing.Size(138, 46);
+            this.energyBt.TabIndex = 4;
+            this.energyBt.Text = "Obtain kinetic energy";
+            this.energyBt.UseVisualStyleBackColor = true;
+            this.energyBt.Click += new System.EventHandler(this.energyBt_Click);
+            // 
             // Equations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 329);
+            this.Controls.Add(this.energyBt);
             this.Controls.Add(this.toVelocityBt);
             this.Controls.Add(this.toHmaxBt);
             this.Controls.Add(this.ToAccelerationBt);
@@ -96,5 +108,6 @@
         private System.Windows.Forms.Button ToAccelerationBt;
         private System.Windows.Forms.Button toHmaxBt;
         private System.Windows.Forms.Button toVelocityBt;
+        private System.Windows.Forms.Button energyBt;
     }
 }

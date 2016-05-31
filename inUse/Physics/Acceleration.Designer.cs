@@ -52,6 +52,8 @@
             this.historicalRTB = new System.Windows.Forms.RichTextBox();
             this.historicalLb = new System.Windows.Forms.Label();
             this.backBt = new System.Windows.Forms.Button();
+            this.backbutton = new System.Windows.Forms.Button();
+            this.mainScreenBt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.formulaPb)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -244,11 +246,33 @@
             this.backBt.Visible = false;
             this.backBt.Click += new System.EventHandler(this.backBt_Click);
             // 
+            // backbutton
+            // 
+            this.backbutton.Location = new System.Drawing.Point(522, 178);
+            this.backbutton.Name = "backbutton";
+            this.backbutton.Size = new System.Drawing.Size(55, 97);
+            this.backbutton.TabIndex = 32;
+            this.backbutton.Text = "Back";
+            this.backbutton.UseVisualStyleBackColor = true;
+            this.backbutton.Click += new System.EventHandler(this.backbutton_Click);
+            // 
+            // mainScreenBt
+            // 
+            this.mainScreenBt.Location = new System.Drawing.Point(522, 58);
+            this.mainScreenBt.Name = "mainScreenBt";
+            this.mainScreenBt.Size = new System.Drawing.Size(55, 93);
+            this.mainScreenBt.TabIndex = 33;
+            this.mainScreenBt.Text = "To main";
+            this.mainScreenBt.UseVisualStyleBackColor = true;
+            this.mainScreenBt.Click += new System.EventHandler(this.mainScreenBt_Click);
+            // 
             // Acceleration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 353);
+            this.Controls.Add(this.mainScreenBt);
+            this.Controls.Add(this.backbutton);
             this.Controls.Add(this.backBt);
             this.Controls.Add(this.historicalLb);
             this.Controls.Add(this.historicalRTB);
@@ -302,5 +326,7 @@
         private System.Windows.Forms.RichTextBox historicalRTB;
         private System.Windows.Forms.Label historicalLb;
         private System.Windows.Forms.Button backBt;
+        private System.Windows.Forms.Button backbutton;
+        private System.Windows.Forms.Button mainScreenBt;
     }
 }
