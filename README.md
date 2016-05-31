@@ -12,24 +12,24 @@ Repaso / Calculadora de física usando Windows Forms
 
 ---DONE---! 5º Entrega: Una vez obtenida la solución a la ecuación que el usuario ha querido saber, se activará un botón para que pueda(en el caso de que quiera) exportar dicha solución a un archivo de texto plano.
 
-6º Entrega: 
+---DONE---! 6º Entrega: 
 - Hacer que cuando se le dé a solve en la clase acceleration se autoguarde en un archivo predefinido y con extensión .phy,que irá en la carpeta bin/debug y será el histórico de todas las soluciones resueltas por el programa.
 - Ahora para cargar el archivo de antes,debes hacer una clase llamada "Historical" se cargará el archivo de antes directamente a un richtextbox**(Puedes ayudarte de un textreader ya que te simplificará bastante el proceso de carga y de muestra de los datos, no te olvides de cerrar el archivo una vez hayas terminado de trabajar con él ;) )**
 - Nota: Fijate bien en la clase acceleration para que puedas ver el formato con el que se guardan los archivos, dicho formato está en el método: **exportResultToAFileToolStripMenuItem_Click** a la hora de guardar el string, ayudate de él para realizar el archivo de historial.
 
-7º Entrega: En la misma ventana de la solución a la ecuación,hacer mediante un chart que dibuje la gráfica de la ecuación si puede ser posible.
+7º Entrega: Añadir muchas más ecuaciones de física como tiros parabólicos, energía cinética, volumen y presiones. Arreglar el fallo de que no se cierran las ventanas bien y terminar de hacer la parte visual y de lógica de ecuaciones que faltan por hacer.
 
 8º Entrega: En la misma ventana de elegir el tipo de ecuación, una vez seleccionada la ecuación que se quiere obtener la solución, dar a elegir entre introducir los datos a mano o cargar un fichero de texto con los datos necesarios en el formato correcto.
 
-9º Entrega: Añadir muchas más ecuaciones de física como tiros parabólicos, energía cinética, volumen y presiones.
+9º Entrega: En la misma ventana de la solución a la ecuación,hacer mediante un chart que dibuje la gráfica de la ecuación si puede ser posible.
 
-10º Entrega: Pasar todo texto de botones, menús, conceptos y términos a inglés y a alemán para hacerlo multilingüe.(1)
+10º Entrega: Pasar todo texto de botones, menús, conceptos y términos a inglés y español para hacerlo multilingüe.(1)
 
-11º Entrega: Pasar todo texto de botones, menús, conceptos y términos a inglés y a alemán para hacerlo multilingüe.(2)
+11º Entrega: Pasar todo texto de botones, menús, conceptos y términos a inglés y español para hacerlo multilingüe.(2)
 
-12º Entrega: Dar la opción al usuario de descargar problemas de física desde una página web con tandas de problemas y además poner un visor para que se conecte a un canal de youtube dedicado a ayuda y a videotutoriales sobre cómo resolver y calcular problemas de física.
+12º Entrega: Añadir nuevas ecuaciones de varios temas: termodinámica, momento de fuerza, aceleración angular, período y frecuencia,leyes de Newton,etc...
 
-13º Entrega: Añadir nuevas ecuaciones de varios temas: termodinámica, momento de fuerza, aceleración angular, período y frecuencia,leyes de Newton,etc...
+13º Entrega: Dar la opción al usuario de descargar problemas de física desde una página web con tandas de problemas y además poner un visor para que se conecte a un canal de youtube dedicado a ayuda y a videotutoriales sobre cómo resolver y calcular problemas de física.
 
 14º Entrega: Interactuar con el usuario; repaso de problemas, el usuario pide un problema, una vez resuelto pone el resultado en el textbox y el programa sacará un tick verde si el resultado ha sido correcto o un tick rojo si el resultado del usuario ha sido incorrecto y además mostrará la solución verdadera.
 
