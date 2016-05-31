@@ -2,7 +2,14 @@
 Num.	Date		By / Changes
 -------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------
-v0.5    26/05/2016      Pedro Antonio Perez, corrected export option by now.
+v0.7    30/05/2016      Jorge Montalvo, Pedro Antonio Perez add historical class to show the historical of equations
+                        solved till the date. Also added a method at acceleration.cs to save to a historial file the
+                        solved equations. Corrected by Pedro Antonio Perez.
+
+v0.6    27/05/2016      Pedro Antonio Perez, added a class for videoreviews with a embedded video and a link to a playlist
+                        of highschool physics videos.
+
+v0.5    26/05/2016      Pedro Antonio Perez, corrected export option by now and some forms of windows forms.
 
 v0.4    25/05/2016      Pedro Antonio Perez, simplified all the equations by one per each class and added export option
                         to export all the solutions of the equations.

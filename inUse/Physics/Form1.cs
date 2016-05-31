@@ -69,5 +69,12 @@ namespace Physics
             Hide();
             video.ShowDialog();
         }
+
+        private void toHistoricalBt_Click(object sender, EventArgs e)
+        {
+            Historical historial = new Historical();
+            Hide();
+            historial.ShowDialog();
+        }
     }
 }

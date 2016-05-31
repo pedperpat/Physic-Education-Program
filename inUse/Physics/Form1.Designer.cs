@@ -50,6 +50,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.toVideosBt = new System.Windows.Forms.Button();
+            this.toHistoricalBt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -254,6 +255,16 @@
             this.toVideosBt.UseVisualStyleBackColor = true;
             this.toVideosBt.Click += new System.EventHandler(this.toVideosBt_Click);
             // 
+            // toHistoricalBt
+            // 
+            this.toHistoricalBt.Location = new System.Drawing.Point(649, 222);
+            this.toHistoricalBt.Name = "toHistoricalBt";
+            this.toHistoricalBt.Size = new System.Drawing.Size(97, 35);
+            this.toHistoricalBt.TabIndex = 22;
+            this.toHistoricalBt.Text = "Show historicals";
+            this.toHistoricalBt.UseVisualStyleBackColor = true;
+            this.toHistoricalBt.Click += new System.EventHandler(this.toHistoricalBt_Click);
+            // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,6 +272,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(758, 323);
+            this.Controls.Add(this.toHistoricalBt);
             this.Controls.Add(this.toVideosBt);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -312,6 +324,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button toVideosBt;
+        private System.Windows.Forms.Button toHistoricalBt;
     }
 }
 

@@ -214,8 +214,9 @@
             // 
             // historicalRTB
             // 
-            this.historicalRTB.Location = new System.Drawing.Point(46, 33);
+            this.historicalRTB.Location = new System.Drawing.Point(45, 47);
             this.historicalRTB.Name = "historicalRTB";
+            this.historicalRTB.ReadOnly = true;
             this.historicalRTB.Size = new System.Drawing.Size(471, 228);
             this.historicalRTB.TabIndex = 29;
             this.historicalRTB.Text = "";
@@ -225,7 +226,7 @@
             // 
             this.historicalLb.AutoSize = true;
             this.historicalLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.historicalLb.Location = new System.Drawing.Point(42, 33);
+            this.historicalLb.Location = new System.Drawing.Point(41, 24);
             this.historicalLb.Name = "historicalLb";
             this.historicalLb.Size = new System.Drawing.Size(89, 20);
             this.historicalLb.TabIndex = 30;

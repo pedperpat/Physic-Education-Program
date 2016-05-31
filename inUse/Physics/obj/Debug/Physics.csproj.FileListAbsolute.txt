@@ -23,3 +23,4 @@ C:\Users\Pedro Antonio\documents\visual studio 2015\Projects\Physics\Physics\obj
 C:\Users\Pedro Antonio\documents\visual studio 2015\Projects\Physics\Physics\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
 C:\Users\Pedro Antonio\documents\visual studio 2015\Projects\Physics\Physics\obj\Debug\Physics.csproj.ResolveComReference.cache
 C:\Users\Pedro Antonio\documents\visual studio 2015\Projects\Physics\Physics\obj\Debug\Physics.VideoReviewForm.resources
+C:\Users\Pedro Antonio\Documents\Visual Studio 2015\Projects\Physics\Physics\obj\Debug\Physics.Historical.resources

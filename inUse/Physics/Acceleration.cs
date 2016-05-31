@@ -47,6 +47,7 @@ namespace Physics
         private void solveBt_Click(object sender, EventArgs e)
         {
             SolveAccelerationEq();
+            SaveHistoricalFile();
         }
 
         private void exportResultToAFileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -189,6 +190,49 @@ namespace Physics
             resultLb.Visible = true;
             initTimeLb.Visible = true;
             resultTb.Visible = true;
+        }
+
+        public void SaveHistoricalFile()
+        {
+            // Grab all the textbox values
+            string initT = initTimeTb.Text;
+            string finalT = finalTimeTb.Text;
+            string initV = initMetersTb.Text;
+            string finalV = finalTimeTb.Text;
+            string result = resultTb.Text;
+
+            try
+            {
+                string fileName = "historical.phy";
+                using (FileStream fs = new FileStream(fileName, FileMode.Append, FileAccess.Write))
+                using (StreamWriter writer = new StreamWriter(fs))
+                {
+                    writer.Write("Acceleration Equation:");
+                    writer.WriteLine();
+                    writer.Write("\t Initial Time = " + initT + " | "
+                    + "Final time = " + finalT + " | Initial velocity = " + initV + " | " +
+                    "Final velocity = " + finalV + " | Result: " + result + "\n");
+                    writer.WriteLine();
+                    writer.Write("---------------------------------------------------------------------" +
+                        "--------------------------------------------------------------------------------");
+                    writer.WriteLine();
+                }
+                //StreamWriter writer = new StreamWriter("historical.phy");
+
+
+            }
+            catch (PathTooLongException)
+            {
+                Console.WriteLine("Path too long.");
+            }
+            catch (IOException ex)
+            {
+                Console.WriteLine("Input/Ouput error: {0}", ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Unexpected error: {0}", ex.Message);
+            }
         }
     }
 }
