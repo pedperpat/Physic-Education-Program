@@ -1,4 +1,4 @@
-# Physic-Education-Program
+# Physic-Education-Program Windows Forms
 
 Repaso / Calculadora de física usando Windows Forms
 
