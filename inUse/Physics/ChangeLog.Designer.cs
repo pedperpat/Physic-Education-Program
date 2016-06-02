@@ -43,7 +43,7 @@
             // 
             // backBt
             // 
-            this.backBt.Location = new System.Drawing.Point(194, 296);
+            this.backBt.Location = new System.Drawing.Point(198, 327);
             this.backBt.Name = "backBt";
             this.backBt.Size = new System.Drawing.Size(149, 34);
             this.backBt.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 342);
+            this.ClientSize = new System.Drawing.Size(561, 409);
             this.Controls.Add(this.backBt);
             this.Controls.Add(this.changeLogRTB);
             this.Name = "ChangeLog";

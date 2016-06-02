@@ -14,6 +14,7 @@ namespace Physics
     public partial class Historical : Form
     {
         private Button backBt;
+        private Button resetBt;
         private RichTextBox historicalRTB;
 
         public Historical()
@@ -56,6 +57,7 @@ namespace Physics
         {
             this.backBt = new System.Windows.Forms.Button();
             this.historicalRTB = new System.Windows.Forms.RichTextBox();
+            this.resetBt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // backBt
@@ -77,9 +79,20 @@ namespace Physics
             this.historicalRTB.TabIndex = 1;
             this.historicalRTB.Text = "";
             // 
+            // resetBt
+            // 
+            this.resetBt.Location = new System.Drawing.Point(67, 354);
+            this.resetBt.Name = "resetBt";
+            this.resetBt.Size = new System.Drawing.Size(76, 46);
+            this.resetBt.TabIndex = 2;
+            this.resetBt.Text = "Reset historical file";
+            this.resetBt.UseVisualStyleBackColor = true;
+            this.resetBt.Click += new System.EventHandler(this.resetBt_Click);
+            // 
             // Historical
             // 
             this.ClientSize = new System.Drawing.Size(640, 417);
+            this.Controls.Add(this.resetBt);
             this.Controls.Add(this.historicalRTB);
             this.Controls.Add(this.backBt);
             this.Name = "Historical";
@@ -98,6 +111,30 @@ namespace Physics
             MainScreen ms = new MainScreen();
             Hide();
             ms.ShowDialog();
+        }
+
+        public void DeleteHistorical()
+        {
+            File.Delete("historical.phy");
+        }
+
+        // When the user click the button to reset,a prompt appears to confirm the action or abort.
+        private void resetBt_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to wipe the internal historical" +
+               " file? Are you sure", "Caution",
+               MessageBoxButtons.YesNoCancel,
+               MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                DeleteHistorical();
+                LoadHistoricalFile();
+            }
+            else if(result == DialogResult.No)
+            {
+                MessageBox.Show("Operation aborted");
+            }
         }
     }
 }

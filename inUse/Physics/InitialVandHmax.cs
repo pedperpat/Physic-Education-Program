@@ -31,8 +31,7 @@ namespace Physics
             if((totalTimeTb.TextLength == 0) || (System.Text.RegularExpressions.Regex.IsMatch(totalTimeTb.Text, "[^0-9]")))
             {
                 MessageBox.Show("Please enter only numbers.");
-                totalTimeTb.Text.Remove(totalTimeTb.Text.Length - 1);
-                return totalTimeTb.Text;
+                return resultVoTb.Text = "0";
             }
             else
             {
@@ -47,17 +46,25 @@ namespace Physics
         // Max height that the proyectile can reach.
         public string GetHmax()
         {
-            string[] voWithoutUnit = GetInitialV().Split(' '); // Get the value of Vo and remove the "m/s" string
-            double v0 = Convert.ToDouble(voWithoutUnit[0]);
-            double time = Convert.ToDouble(totalTimeTb.Text) / 2;
+            if(GetInitialV() == "0")
+            {
+                MessageBox.Show("Invalid input");
+                return resultVoTb.Text = "Invalid";
+            }
+            else
+            {
+                string[] voWithoutUnit = GetInitialV().Split(' '); // Get the value of Vo and remove the "m/s" string
+                double v0 = Convert.ToDouble(voWithoutUnit[0]);
+                double time = Convert.ToDouble(totalTimeTb.Text) / 2;
 
-            /* Aplying final position formula, as we know the initial position is 0 and we know the time and v0
-             * we can calculate the final position incognita with the actual values.
-             */
-            double Hmax = v0 * time - 0.5 * G * time * time;
+                /* Aplying final position formula, as we know the initial position is 0 and we know the time and v0
+                 * we can calculate the final position incognita with the actual values.
+                 */
+                double Hmax = v0 * time - 0.5 * G * time * time;
 
-            resultHmaxTb.Text = Convert.ToString(Hmax) + " m";
-            return resultHmaxTb.Text;
+                resultHmaxTb.Text = Convert.ToString(Hmax) + " m";
+                return resultHmaxTb.Text;
+            }
         }
 
         private void getVoBt_Click(object sender, EventArgs e)
@@ -69,9 +76,10 @@ namespace Physics
 
         private void solveHmaxBt_Click(object sender, EventArgs e)
         {
-            if(totalTimeTb.TextLength == 0)
+            if ((totalTimeTb.TextLength == 0) || (System.Text.RegularExpressions.Regex.IsMatch(totalTimeTb.Text, "[^0-9]")))
             {
-                totalTimeTb.Text = "Enter valid time";
+                MessageBox.Show("Please enter only numbers.");
+                resultHmaxTb.Text = "Invalid";
             }
             else
             {

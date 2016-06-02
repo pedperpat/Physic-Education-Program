@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Physics.Acceleration">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>FQSREQEBBCAAARCEAgGGAggGIAAgAAAAAoVBAACAAAA=</HashCode>
+      <FileName>Acceleration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.ChangeLog">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAASAAAACAAAACAAAAAAAEAABAAAAAAAA=</HashCode>
+      <FileName>ChangeLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.Concepts">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AyiAACAAAKAAARAIgATACCACAAEAxBAABgBAAAAAAAg=</HashCode>
+      <FileName>Concepts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.Constants">
+    <Position X="7" Y="9.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>caACMAAAASAAATiAFACQAABCAAAAAAAAMwBIAAIAjKA=</HashCode>
+      <FileName>Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.Energy">
+    <Position X="1" Y="7" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAgQEAAAACAAARAAAACAAAAiABACAAAQBIRAAABAAAA=</HashCode>
+      <FileName>Energy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.Equations">
+    <Position X="1" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACgAAAAAACCAAQQAAACAAAACAAAIAEQCCABCAAAAAAA=</HashCode>
+      <FileName>Equations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.MainScreen">
+    <Position X="7" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>cABDAAAoACAAUBAAAACQoAACQAIIAAIAAEAAAAAABAg=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.HelpScreen">
+    <Position X="2.5" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QQAAAAQAACAIAZAAAgiAAAACAAAAAAACAEBAAABAgAQ=</HashCode>
+      <FileName>HelpScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.Historical">
+    <Position X="2.5" Y="7.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAgAAAAACAAAAAAAAAAHAAAAAAAA=</HashCode>
+      <FileName>Historical.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.InitialVandHmax">
+    <Position X="5.5" Y="9.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAACEAARAAQACAAAACIABBCAAAAoBAGAAAAIA=</HashCode>
+      <FileName>InitialVandHmax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.Position">
+    <Position X="2.5" Y="9.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>JAAQAAAAACAAAQCAAACAAAAKAAAABEAAEABACAAAAAA=</HashCode>
+      <FileName>Position.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.ProblemsReview">
+    <Position X="4" Y="6.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BSEAAAAAASACARgRAACAgAACAEACAAAAAgBBAAAAAAA=</HashCode>
+      <FileName>ProblemsReview.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.Program">
+    <Position X="2.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.Velocity">
+    <Position X="1" Y="9.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>JQAAEAAAACAAARiAQACAAAACAAQAAAAAAIBBCAAAAAA=</HashCode>
+      <FileName>Velocity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.VideoReviewForm">
+    <Position X="5.5" Y="5.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAQAAAgCACAACAAAAAAAAAABAAEAAAAA=</HashCode>
+      <FileName>VideoReview.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.Properties.Resources">
+    <Position X="4" Y="9.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics.Properties.Settings">
+    <Position X="5.5" Y="8.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

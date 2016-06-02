@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Concepts));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.searchBox = new System.Windows.Forms.TextBox();
+            this.searchBoxTb = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
             this.nextSearchBt = new System.Windows.Forms.Button();
             this.previousSearchBt = new System.Windows.Forms.Button();
@@ -69,13 +69,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Enter something to search: ";
             // 
-            // searchBox
+            // searchBoxTb
             // 
-            this.searchBox.Location = new System.Drawing.Point(296, 46);
-            this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(100, 20);
-            this.searchBox.TabIndex = 3;
-            this.searchBox.Text = "word to search";
+            this.searchBoxTb.Location = new System.Drawing.Point(296, 46);
+            this.searchBoxTb.Name = "searchBoxTb";
+            this.searchBoxTb.Size = new System.Drawing.Size(100, 20);
+            this.searchBoxTb.TabIndex = 3;
+            this.searchBoxTb.Text = "word to search";
             // 
             // searchButton
             // 
@@ -85,6 +85,7 @@
             this.searchButton.TabIndex = 4;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // nextSearchBt
             // 
@@ -162,12 +163,14 @@
             this.saveConceptFileToolStripMenuItem.Name = "saveConceptFileToolStripMenuItem";
             this.saveConceptFileToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.saveConceptFileToolStripMenuItem.Text = "Save concepts";
+            this.saveConceptFileToolStripMenuItem.Click += new System.EventHandler(this.saveConceptFileToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -216,7 +219,7 @@
             this.Controls.Add(this.previousSearchBt);
             this.Controls.Add(this.nextSearchBt);
             this.Controls.Add(this.searchButton);
-            this.Controls.Add(this.searchBox);
+            this.Controls.Add(this.searchBoxTb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -234,7 +237,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.TextBox searchBoxTb;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Button nextSearchBt;
         private System.Windows.Forms.Button previousSearchBt;

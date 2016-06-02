@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Physics
@@ -86,54 +80,69 @@ namespace Physics
             string initV = initMetersTb.Text;
             string finalV = finalTimeTb.Text;
             string result = resultTb.Text;
-
-            SaveFileDialog saveFile = new SaveFileDialog();
-            saveFile.DefaultExt = "phy"; // No need the user to input an extension.
-            saveFile.AddExtension = true; // Auto add the default extension.
-            saveFile.OverwritePrompt = false; // Overwrite alert message not show | *Change to true to show alert message.
-            if (saveFile.ShowDialog() == DialogResult.OK)
+            try
             {
-                using (Stream stream = File.Open(saveFile.FileName, FileMode.Append))
-                using (StreamWriter writer = new StreamWriter(stream))
+                SaveFileDialog saveFile = new SaveFileDialog();
+                saveFile.DefaultExt = "phy"; // No need the user to input an extension.
+                saveFile.AddExtension = true; // Auto add the default extension.
+                saveFile.OverwritePrompt = false; // Overwrite alert message not show | *Change to true to show alert message.
+                if (saveFile.ShowDialog() == DialogResult.OK)
                 {
-                    writer.Write("Acceleration Equation:");
-                    writer.WriteLine();
-                    writer.Write("\t Initial Time = " + initT + " | "
-                    + "Final time = " + finalT + " | Initial velocity = " + initV + " | " +
-                    "Final velocity = " + finalV + " | Result: " + result + "\n");
-                    writer.WriteLine();
-                    writer.Write("---------------------------------------------------------------------" +
-                        "--------------------------------------------------------------------------------");
-                    writer.WriteLine();
+                    // If the file is named correctly, then we start the saving process.
+                    using (Stream stream = File.Open(saveFile.FileName, FileMode.Append))
+                    using (StreamWriter writer = new StreamWriter(stream))
+                    {
+                        writer.Write("Acceleration Equation:");
+                        writer.WriteLine();
+                        writer.Write("\t Initial Time = " + initT + " | "
+                        + "Final time = " + finalT + " | Initial velocity = " + initV + " | " +
+                        "Final velocity = " + finalV + " | Result: " + result + "\n");
+                        writer.WriteLine();
+                        writer.Write("---------------------------------------------------------------------" +
+                            "--------------------------------------------------------------------------------");
+                        writer.WriteLine();
+                    }
                 }
             }
+            catch (PathTooLongException)
+            {
+                Console.WriteLine("Path too long.");
+            }
+            catch (IOException ex)
+            {
+                Console.WriteLine("Input/Ouput error: {0}", ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Unexpected error: {0}", ex.Message);
+            }
+
         }
 
         // Export to a file as a history of solved acceleration equations
         // Code to test
-        // Really useless, I dont call this method.
         private void saveFileDialog_FileOk(object sender, CancelEventArgs e)
         {
             //Method nº1 of export *WORKING!*
             //################################################################
             // Get all values of the textboxes as a string
-            string initT = initTimeTb.Text;
-            string finalT = finalTimeTb.Text;
-            string initV = initMetersTb.Text;
-            string finalV = finalTimeTb.Text;
-            string result = resultTb.Text;
+            //string initT = initTimeTb.Text;
+            //string finalT = finalTimeTb.Text;
+            //string initV = initMetersTb.Text;
+            //string finalV = finalTimeTb.Text;
+            //string result = resultTb.Text;
 
-            SaveFileDialog saveFile = new SaveFileDialog();
-            if(saveFile.ShowDialog() == DialogResult.OK)
-            {
-                using (Stream stream = File.Open(saveFile.FileName, FileMode.CreateNew))
-                using (StreamWriter writer = new StreamWriter(stream))
-                {
-                    writer.Write("Acceleration Equation: Initial Time = " + initT + " | "
-                    +"Final time = "+ finalT +" | Initial velocity = "+ initV +" | " +
-                    "Final velocity = "+ finalV +" | Result: "+ result +"\n");
-                }
-            }
+            //SaveFileDialog saveFile = new SaveFileDialog();
+            //if(saveFile.ShowDialog() == DialogResult.OK)
+            //{
+            //    using (Stream stream = File.Open(saveFile.FileName, FileMode.CreateNew))
+            //    using (StreamWriter writer = new StreamWriter(stream))
+            //    {
+            //        writer.Write("Acceleration Equation: Initial Time = " + initT + " | "
+            //        +"Final time = "+ finalT +" | Initial velocity = "+ initV +" | " +
+            //        "Final velocity = "+ finalV +" | Result: "+ result +"\n");
+            //    }
+            //}
             //Method nº2 of export 
             //################################################################
 
@@ -160,12 +169,6 @@ namespace Physics
         // To show the historical file at a richtextbox
         private void historicalOfSolutionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // For more info about using the openfiledialog: http://stackoverflow.com/questions/16136383/reading-a-text-file-using-openfiledialog-in-windows-forms
-            // I need to show the historical of all the acceleration results at a richtextbox by now
-            // in a future the load of historical results will be at a new windows forms class called solved
-            // equations and it will load al the results that are recorded in a file. Such as acceleration,
-            // position, energy,etc... all loaded at the richtextbox.
-
             // Hide elements when click the menustrip
             initTimeTb.Visible = false;
             initTimeLb.Visible = false;
@@ -191,7 +194,7 @@ namespace Physics
             // Initialize the filter to look for text files.
             loadHistorical.Filter = "PHY Files|*.phy";
 
-            // If the user selected a file, load its contents into the RichTextBox. 
+            // If the user selects a file, loads its contents into the RichTextBox. 
             if (loadHistorical.ShowDialog() == DialogResult.OK)
                 historicalRTB.LoadFile(loadHistorical.FileName,
                 RichTextBoxStreamType.PlainText);
@@ -229,6 +232,7 @@ namespace Physics
 
             try
             {
+                // Process of writing to a internal historical file.
                 string fileName = "historical.phy";
                 using (FileStream fs = new FileStream(fileName, FileMode.Append, FileAccess.Write))
                 using (StreamWriter writer = new StreamWriter(fs))
@@ -243,9 +247,6 @@ namespace Physics
                         "--------------------------------------------------------------------------------");
                     writer.WriteLine();
                 }
-                //StreamWriter writer = new StreamWriter("historical.phy");
-
-
             }
             catch (PathTooLongException)
             {
@@ -263,9 +264,9 @@ namespace Physics
 
         private void backbutton_Click(object sender, EventArgs e)
         {
-            MainScreen ms = new MainScreen();
+            Equations eq = new Equations();
             Hide();
-            ms.ShowDialog();
+            eq.ShowDialog();
         }
 
         private void mainScreenBt_Click(object sender, EventArgs e)
