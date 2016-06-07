@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Physics
@@ -35,7 +29,7 @@ namespace Physics
             help.ShowDialog();
         }
 
-        public void ReadConceptsFile()
+        public void ReadFile()
         {
             try
             {
@@ -53,22 +47,22 @@ namespace Physics
             }
             catch (PathTooLongException)
             {
-                Console.WriteLine("Path too long");
+                MessageBox.Show("Path too long");
             }
-            catch (IOException ex)
+            catch (IOException)
             {
-                Console.WriteLine("In/Out exception {0}", ex);
+                MessageBox.Show("In/Out exception");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Console.WriteLine("Uknown exception {0}", ex);
+                MessageBox.Show("Unkown exception");
             }
 
         }
 
         private void loadConceptsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ReadConceptsFile();
+            ReadFile();
             conceptsRTB.ReadOnly = true;
         }
 
@@ -116,15 +110,15 @@ namespace Physics
             }
             catch (PathTooLongException)
             {
-                Console.WriteLine("Path too long.");
+                MessageBox.Show("Path too long");
             }
-            catch (IOException ex)
+            catch (IOException)
             {
-                Console.WriteLine("Input/Ouput error: {0}", ex.Message);
+                MessageBox.Show("In/Out exception");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Console.WriteLine("Unexpected error: {0}", ex.Message);
+                MessageBox.Show("Unkown exception");
             }
         }
 
@@ -141,14 +135,17 @@ namespace Physics
         private void searchButton_Click(object sender, EventArgs e)
         {
             HighlightAndSearch();
+            //HighLightIfExists(conceptsRTB, searchBoxTb.Text);
         }
 
+        // First method to search, not working by now.
         public void HighlightAndSearch()
         {
             try
             {
                 if (conceptsRTB.Text != string.Empty)
-                {// If the ritchtextbox is not empty; highlight the search criteria.
+                {
+                    // If the ritchtextbox is not empty; highlight the search criteria.
                     int index = 0;
                     String temp = conceptsRTB.Text;
                     conceptsRTB.Text = "";
@@ -165,6 +162,20 @@ namespace Physics
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error");
+            }
+        }
+
+        // Pending method to search
+        public void HighLightIfExists(RichTextBox textBox, string textToSearch)
+        {
+            int length = searchBoxTb.TextLength;
+            int index = 0;
+            int lastIndex = conceptsRTB.Text.LastIndexOf(searchBoxTb.Text, StringComparison.OrdinalIgnoreCase);
+            while (index <= lastIndex)
+            {
+                conceptsRTB.Find(textToSearch, index, length, RichTextBoxFinds.None);
+                conceptsRTB.SelectionBackColor = Color.Yellow;
+                index = this.searchBoxTb.Text.IndexOf(textToSearch, index) + 1;
             }
         }
     }

@@ -33,6 +33,7 @@
             this.toHmaxBt = new System.Windows.Forms.Button();
             this.toVelocityBt = new System.Windows.Forms.Button();
             this.energyBt = new System.Windows.Forms.Button();
+            this.goToAngularAccBt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // backBt
@@ -47,7 +48,7 @@
             // 
             // ToAccelerationBt
             // 
-            this.ToAccelerationBt.Location = new System.Drawing.Point(145, 84);
+            this.ToAccelerationBt.Location = new System.Drawing.Point(122, 84);
             this.ToAccelerationBt.Name = "ToAccelerationBt";
             this.ToAccelerationBt.Size = new System.Drawing.Size(136, 46);
             this.ToAccelerationBt.TabIndex = 1;
@@ -57,7 +58,7 @@
             // 
             // toHmaxBt
             // 
-            this.toHmaxBt.Location = new System.Drawing.Point(315, 84);
+            this.toHmaxBt.Location = new System.Drawing.Point(334, 84);
             this.toHmaxBt.Name = "toHmaxBt";
             this.toHmaxBt.Size = new System.Drawing.Size(138, 46);
             this.toHmaxBt.TabIndex = 2;
@@ -67,7 +68,7 @@
             // 
             // toVelocityBt
             // 
-            this.toVelocityBt.Location = new System.Drawing.Point(145, 173);
+            this.toVelocityBt.Location = new System.Drawing.Point(122, 209);
             this.toVelocityBt.Name = "toVelocityBt";
             this.toVelocityBt.Size = new System.Drawing.Size(136, 46);
             this.toVelocityBt.TabIndex = 3;
@@ -77,7 +78,7 @@
             // 
             // energyBt
             // 
-            this.energyBt.Location = new System.Drawing.Point(315, 173);
+            this.energyBt.Location = new System.Drawing.Point(334, 209);
             this.energyBt.Name = "energyBt";
             this.energyBt.Size = new System.Drawing.Size(138, 46);
             this.energyBt.TabIndex = 4;
@@ -85,11 +86,22 @@
             this.energyBt.UseVisualStyleBackColor = true;
             this.energyBt.Click += new System.EventHandler(this.energyBt_Click);
             // 
+            // goToAngularAccBt
+            // 
+            this.goToAngularAccBt.Location = new System.Drawing.Point(225, 147);
+            this.goToAngularAccBt.Name = "goToAngularAccBt";
+            this.goToAngularAccBt.Size = new System.Drawing.Size(136, 46);
+            this.goToAngularAccBt.TabIndex = 5;
+            this.goToAngularAccBt.Text = "Obtain angular acceleration";
+            this.goToAngularAccBt.UseVisualStyleBackColor = true;
+            this.goToAngularAccBt.Click += new System.EventHandler(this.goToAngularAccBt_Click);
+            // 
             // Equations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 329);
+            this.Controls.Add(this.goToAngularAccBt);
             this.Controls.Add(this.energyBt);
             this.Controls.Add(this.toVelocityBt);
             this.Controls.Add(this.toHmaxBt);
@@ -109,5 +121,6 @@
         private System.Windows.Forms.Button toHmaxBt;
         private System.Windows.Forms.Button toVelocityBt;
         private System.Windows.Forms.Button energyBt;
+        private System.Windows.Forms.Button goToAngularAccBt;
     }
 }

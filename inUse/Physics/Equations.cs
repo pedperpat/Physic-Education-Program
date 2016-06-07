@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Physics
 {
@@ -25,7 +17,7 @@ namespace Physics
 
         private void Equations_Load(object sender, EventArgs e)
         {
-
+            PassValues();
         }
 
         private void backBt_Click(object sender, EventArgs e)
@@ -70,6 +62,21 @@ namespace Physics
             energy.ShowDialog();
         }
 
+        private void goToAngularAccBt_Click(object sender, EventArgs e)
+        {
+            AngularAcceleration angac = new AngularAcceleration();
+            Hide();
+            angac.ShowDialog();
+        }
 
+        public void PassValues()
+        {
+            toHmaxBt.Text = MainScreen.toInitVH;
+            ToAccelerationBt.Text = MainScreen.toAc;
+            energyBt.Text = MainScreen.toKE;
+            goToAngularAccBt.Text = MainScreen.toAngAc;
+            toVelocityBt.Text = MainScreen.toFinalV;
+            backBt.Text = MainScreen.BackBt;
+        }
     }
 }

@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Physics
@@ -22,7 +15,7 @@ namespace Physics
 
         private void InitialVandHmax_Load(object sender, EventArgs e)
         {
-
+            //PassTranslationTexts();
         }
 
         // Initial V method to get the initial velocity when a bullet it's shooted.
@@ -35,7 +28,7 @@ namespace Physics
             }
             else
             {
-                double v0 = 0; double vf = 0;
+                double v0 = 0;
                 double totalTime = Convert.ToDouble(totalTimeTb.Text) / 2;
                 v0 = G * totalTime; // Aplying V equation "vf = vo + G * t"
                 resultVoTb.Text = Convert.ToString(v0) + " m/s";
@@ -125,16 +118,33 @@ namespace Physics
             }
             catch (PathTooLongException)
             {
-                Console.WriteLine("Path too long.");
+                MessageBox.Show("Path too long");
             }
-            catch (IOException ex)
+            catch (IOException)
             {
-                Console.WriteLine("Input/Ouput error: {0}", ex.Message);
+                MessageBox.Show("In/Out exception");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Console.WriteLine("Unexpected error: {0}", ex.Message);
+                MessageBox.Show("Unkown exception");
             }
+        }
+
+        // To obtain the translation from the form1
+        public void PassTranslationTexts()
+        {
+            label1.Text = MainScreen.lb1InitVHmax;
+            label3.Text = MainScreen.lb2InitVHmax;
+            label6.Text = MainScreen.lb3InitVHmax;
+            label7.Text = MainScreen.lb4InitVHmax;
+            label8.Text = MainScreen.lb5InitVHmax;
+            label4.Text = MainScreen.totalTime;
+            label2.Text = MainScreen.lbFormulaVf;
+            label5.Text = MainScreen.resultBt;
+            backBt.Text = MainScreen.BackBt;
+            getVoBt.Text = MainScreen.getV0Bt;
+            solveHmaxBt.Text = MainScreen.solveHMax;
+            
         }
     }
 }

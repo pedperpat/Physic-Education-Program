@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Threading;
+using System.Globalization;
 
 namespace Physics
 {
-     partial class ProblemsReview : Form
+    partial class ProblemsReview : Form
     {
         public ProblemsReview()
         {
@@ -31,7 +27,6 @@ namespace Physics
         private void backBt_Click(object sender, EventArgs e)
         {
             MainScreen mainScreen = new MainScreen();
-            //Close();
             Hide();
             mainScreen.ShowDialog();
         }
@@ -43,15 +38,7 @@ namespace Physics
 
         private void btSolve_Click(object sender, EventArgs e)
         {
-            Random rdn = new Random();
-            for (int i = 0; i < 50; i++)
-            {
-                graphicPlotter.Series["Graphic Result"].Points.AddXY
-                                (rdn.Next(0, 10), rdn.Next(0, 10));
-            }
-
-            graphicPlotter.Series["Graphic Result"].ChartType = SeriesChartType.Spline;
-            graphicPlotter.Series["Graphic Result"].Color = Color.Red;
+            PlotInChart();
         }
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
@@ -59,6 +46,24 @@ namespace Physics
             HelpScreen help = new HelpScreen();
             Hide();
             help.ShowDialog();
+        }
+
+        // TODO: Improve the switch to decide where to split the equation.
+        public void PlotInChart()
+        {
+        //    switch()
+        //    {
+        //        case (("*")):
+        //            string[] splitEq = eqTb.Split('*');
+        //            break;
+        //    }
+        //    for (int i = 0; i < 10; i++)
+        //    {
+
+        //    }
+
+        //    graphicPlotter.Series["Graphic Result"].ChartType = SeriesChartType.Spline;
+        //    graphicPlotter.Series["Graphic Result"].Color = Color.Red;
         }
     }
 }

@@ -41,7 +41,7 @@
             this.solveBt = new System.Windows.Forms.Button();
             this.resultLb = new System.Windows.Forms.Label();
             this.resultTb = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.accelFormulaLb = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportResultToAFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -160,15 +160,15 @@
             this.resultTb.Size = new System.Drawing.Size(123, 20);
             this.resultTb.TabIndex = 26;
             // 
-            // label1
+            // accelFormulaLb
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(180, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 20);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "Acceleration Formula";
+            this.accelFormulaLb.AutoSize = true;
+            this.accelFormulaLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accelFormulaLb.Location = new System.Drawing.Point(180, 35);
+            this.accelFormulaLb.Name = "accelFormulaLb";
+            this.accelFormulaLb.Size = new System.Drawing.Size(179, 20);
+            this.accelFormulaLb.TabIndex = 27;
+            this.accelFormulaLb.Text = "Acceleration Formula";
             // 
             // menuStrip1
             // 
@@ -216,7 +216,7 @@
             // 
             // historicalRTB
             // 
-            this.historicalRTB.Location = new System.Drawing.Point(45, 47);
+            this.historicalRTB.Location = new System.Drawing.Point(383, 251);
             this.historicalRTB.Name = "historicalRTB";
             this.historicalRTB.ReadOnly = true;
             this.historicalRTB.Size = new System.Drawing.Size(471, 228);
@@ -276,7 +276,7 @@
             this.Controls.Add(this.backBt);
             this.Controls.Add(this.historicalLb);
             this.Controls.Add(this.historicalRTB);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.accelFormulaLb);
             this.Controls.Add(this.resultTb);
             this.Controls.Add(this.resultLb);
             this.Controls.Add(this.solveBt);
@@ -315,7 +315,7 @@
         private System.Windows.Forms.Button solveBt;
         private System.Windows.Forms.Label resultLb;
         private System.Windows.Forms.TextBox resultTb;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label accelFormulaLb;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportResultToAFileToolStripMenuItem;

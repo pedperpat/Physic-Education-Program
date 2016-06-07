@@ -1,6 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
 using System.IO;
+using System.Reflection;
+using System.Resources;
 using System.Windows.Forms;
 
 namespace Physics
@@ -34,10 +36,9 @@ namespace Physics
                 double vInitial = 0; double vFinal = 0;
                 double tInitial = 0; double tFinal = 0;
                 double acceleration;
-                if (Convert.ToDouble(finalTimeTb.Text) >= 0)
-                    tFinal = Convert.ToDouble(finalTimeTb.Text);
+                    tFinal = Math.Abs(Convert.ToDouble(finalTimeTb.Text));
                 if (Convert.ToDouble(initTimeTb.Text) >= 0)
-                    tInitial = Convert.ToDouble(initTimeTb.Text);
+                    tInitial = Math.Abs(Convert.ToDouble(initTimeTb.Text));
                 //if (Convert.ToDouble(finalVTb) >= 0) // No sense,may be a negative velocity
                 vFinal = Convert.ToDouble(finalVTb.Text);
                 //if (Convert.ToDouble(initTimeTb) >= 0) // No sense,may be a negative velocity
@@ -45,9 +46,15 @@ namespace Physics
 
                 double deltaOfV = vFinal - vInitial;
                 double deltaOfT = tFinal - tInitial;
-                acceleration = deltaOfV / deltaOfT;
-
-                resultTb.Text = Convert.ToString(acceleration) + " m/s";
+                try
+                {
+                    acceleration = deltaOfV / deltaOfT;
+                    resultTb.Text = Convert.ToString(acceleration) + " m/s";
+                }
+                catch(DivideByZeroException)
+                {
+                    MessageBox.Show("Can't divide by zero");
+                }
             }
         }
 
@@ -106,15 +113,15 @@ namespace Physics
             }
             catch (PathTooLongException)
             {
-                Console.WriteLine("Path too long.");
+                MessageBox.Show("Path too long");
             }
-            catch (IOException ex)
+            catch (IOException)
             {
-                Console.WriteLine("Input/Ouput error: {0}", ex.Message);
+                MessageBox.Show("In/Out exception");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Console.WriteLine("Unexpected error: {0}", ex.Message);
+                MessageBox.Show("Uknown exception");
             }
 
         }
@@ -250,15 +257,15 @@ namespace Physics
             }
             catch (PathTooLongException)
             {
-                Console.WriteLine("Path too long.");
+                MessageBox.Show("Path too long");
             }
-            catch (IOException ex)
+            catch (IOException)
             {
-                Console.WriteLine("Input/Ouput error: {0}", ex.Message);
+                MessageBox.Show("In/Out exception");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Console.WriteLine("Unexpected error: {0}", ex.Message);
+                MessageBox.Show("Unknown exception");
             }
         }
 

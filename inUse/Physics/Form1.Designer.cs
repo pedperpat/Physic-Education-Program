@@ -29,40 +29,41 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainScreen));
-            this.label1 = new System.Windows.Forms.Label();
+            this.titleLb = new System.Windows.Forms.Label();
             this.conceptsBt = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.ConceptsLb = new System.Windows.Forms.Label();
+            this.ConstantsLb = new System.Windows.Forms.Label();
             this.constantsBt = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.EquationsLb = new System.Windows.Forms.Label();
             this.equationsBt = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.ProblemReviewLb = new System.Windows.Forms.Label();
             this.problemsBt = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.progProyectLb = new System.Windows.Forms.Label();
+            this.changeTextLb = new System.Windows.Forms.Label();
             this.spanishLan = new System.Windows.Forms.RadioButton();
             this.englishLan = new System.Windows.Forms.RadioButton();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.numberVersionLb = new System.Windows.Forms.Label();
+            this.dateVersionLb = new System.Windows.Forms.Label();
+            this.helpLb = new System.Windows.Forms.Label();
             this.helpBt = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.VersionLb = new System.Windows.Forms.Label();
+            this.videoReviewLb = new System.Windows.Forms.Label();
             this.toVideosBt = new System.Windows.Forms.Button();
             this.toHistoricalBt = new System.Windows.Forms.Button();
+            this.changeLanBt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // titleLb
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(194, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(373, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Physics review for students of highschool";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.titleLb.AutoSize = true;
+            this.titleLb.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLb.Location = new System.Drawing.Point(194, 26);
+            this.titleLb.Name = "titleLb";
+            this.titleLb.Size = new System.Drawing.Size(373, 21);
+            this.titleLb.TabIndex = 0;
+            this.titleLb.Text = "Physics review for students of highschool";
+            this.titleLb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // conceptsBt
             // 
@@ -74,23 +75,23 @@
             this.conceptsBt.UseVisualStyleBackColor = true;
             this.conceptsBt.Click += new System.EventHandler(this.conceptsBt_Click);
             // 
-            // label2
+            // ConceptsLb
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(144, 70);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Fundamental Concepts";
+            this.ConceptsLb.AutoSize = true;
+            this.ConceptsLb.Location = new System.Drawing.Point(144, 70);
+            this.ConceptsLb.Name = "ConceptsLb";
+            this.ConceptsLb.Size = new System.Drawing.Size(116, 13);
+            this.ConceptsLb.TabIndex = 2;
+            this.ConceptsLb.Text = "Fundamental Concepts";
             // 
-            // label3
+            // ConstantsLb
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(480, 70);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Most usable constants";
+            this.ConstantsLb.AutoSize = true;
+            this.ConstantsLb.Location = new System.Drawing.Point(480, 70);
+            this.ConstantsLb.Name = "ConstantsLb";
+            this.ConstantsLb.Size = new System.Drawing.Size(113, 13);
+            this.ConstantsLb.TabIndex = 3;
+            this.ConstantsLb.Text = "Most usable constants";
             // 
             // constantsBt
             // 
@@ -102,14 +103,14 @@
             this.constantsBt.UseVisualStyleBackColor = true;
             this.constantsBt.Click += new System.EventHandler(this.constantsBt_Click);
             // 
-            // label4
+            // EquationsLb
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(144, 186);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Simple physics equations";
+            this.EquationsLb.AutoSize = true;
+            this.EquationsLb.Location = new System.Drawing.Point(144, 186);
+            this.EquationsLb.Name = "EquationsLb";
+            this.EquationsLb.Size = new System.Drawing.Size(125, 13);
+            this.EquationsLb.TabIndex = 5;
+            this.EquationsLb.Text = "Simple physics equations";
             // 
             // equationsBt
             // 
@@ -121,14 +122,14 @@
             this.equationsBt.UseVisualStyleBackColor = true;
             this.equationsBt.Click += new System.EventHandler(this.equationsBt_Click);
             // 
-            // label5
+            // ProblemReviewLb
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(480, 186);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Some problems to review";
+            this.ProblemReviewLb.AutoSize = true;
+            this.ProblemReviewLb.Location = new System.Drawing.Point(480, 186);
+            this.ProblemReviewLb.Name = "ProblemReviewLb";
+            this.ProblemReviewLb.Size = new System.Drawing.Size(125, 13);
+            this.ProblemReviewLb.TabIndex = 7;
+            this.ProblemReviewLb.Text = "Some problems to review";
             // 
             // problemsBt
             // 
@@ -140,23 +141,23 @@
             this.problemsBt.UseVisualStyleBackColor = true;
             this.problemsBt.Click += new System.EventHandler(this.problemsBt_Click);
             // 
-            // label6
+            // progProyectLb
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 301);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(273, 13);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Final programming proyect: Pedro Antonio Pérez Paterna";
+            this.progProyectLb.AutoSize = true;
+            this.progProyectLb.Location = new System.Drawing.Point(12, 301);
+            this.progProyectLb.Name = "progProyectLb";
+            this.progProyectLb.Size = new System.Drawing.Size(273, 13);
+            this.progProyectLb.TabIndex = 9;
+            this.progProyectLb.Text = "Final programming proyect: Pedro Antonio Pérez Paterna";
             // 
-            // label7
+            // changeTextLb
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(395, 303);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 13);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Change lenguage:";
+            this.changeTextLb.AutoSize = true;
+            this.changeTextLb.Location = new System.Drawing.Point(395, 303);
+            this.changeTextLb.Name = "changeTextLb";
+            this.changeTextLb.Size = new System.Drawing.Size(94, 13);
+            this.changeTextLb.TabIndex = 10;
+            this.changeTextLb.Text = "Change lenguage:";
             // 
             // spanishLan
             // 
@@ -180,32 +181,32 @@
             this.englishLan.Text = "English";
             this.englishLan.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // numberVersionLb
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(613, 21);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(144, 13);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "V: 0.5 More equations added";
+            this.numberVersionLb.AutoSize = true;
+            this.numberVersionLb.Location = new System.Drawing.Point(613, 21);
+            this.numberVersionLb.Name = "numberVersionLb";
+            this.numberVersionLb.Size = new System.Drawing.Size(144, 13);
+            this.numberVersionLb.TabIndex = 14;
+            this.numberVersionLb.Text = "V: 0.5 More equations added";
             // 
-            // label9
+            // dateVersionLb
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(692, 34);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(65, 13);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "27/05/2016";
+            this.dateVersionLb.AutoSize = true;
+            this.dateVersionLb.Location = new System.Drawing.Point(692, 34);
+            this.dateVersionLb.Name = "dateVersionLb";
+            this.dateVersionLb.Size = new System.Drawing.Size(65, 13);
+            this.dateVersionLb.TabIndex = 15;
+            this.dateVersionLb.Text = "27/05/2016";
             // 
-            // label10
+            // helpLb
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(350, 119);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(29, 13);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Help";
+            this.helpLb.AutoSize = true;
+            this.helpLb.Location = new System.Drawing.Point(350, 119);
+            this.helpLb.Name = "helpLb";
+            this.helpLb.Size = new System.Drawing.Size(29, 13);
+            this.helpLb.TabIndex = 16;
+            this.helpLb.Text = "Help";
             // 
             // helpBt
             // 
@@ -227,23 +228,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label11
+            // VersionLb
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(626, 8);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(81, 13);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Current version:";
+            this.VersionLb.AutoSize = true;
+            this.VersionLb.Location = new System.Drawing.Point(626, 8);
+            this.VersionLb.Name = "VersionLb";
+            this.VersionLb.Size = new System.Drawing.Size(81, 13);
+            this.VersionLb.TabIndex = 19;
+            this.VersionLb.Text = "Current version:";
             // 
-            // label12
+            // videoReviewLb
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(326, 213);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(76, 13);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "Video reviews:";
+            this.videoReviewLb.AutoSize = true;
+            this.videoReviewLb.Location = new System.Drawing.Point(326, 213);
+            this.videoReviewLb.Name = "videoReviewLb";
+            this.videoReviewLb.Size = new System.Drawing.Size(76, 13);
+            this.videoReviewLb.TabIndex = 20;
+            this.videoReviewLb.Text = "Video reviews:";
             // 
             // toVideosBt
             // 
@@ -265,6 +266,16 @@
             this.toHistoricalBt.UseVisualStyleBackColor = true;
             this.toHistoricalBt.Click += new System.EventHandler(this.toHistoricalBt_Click);
             // 
+            // changeLanBt
+            // 
+            this.changeLanBt.Location = new System.Drawing.Point(632, 296);
+            this.changeLanBt.Name = "changeLanBt";
+            this.changeLanBt.Size = new System.Drawing.Size(75, 23);
+            this.changeLanBt.TabIndex = 23;
+            this.changeLanBt.Text = "Change!";
+            this.changeLanBt.UseVisualStyleBackColor = true;
+            this.changeLanBt.Click += new System.EventHandler(this.changeLanBt_Click);
+            // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -272,30 +283,32 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(758, 323);
+            this.Controls.Add(this.changeLanBt);
             this.Controls.Add(this.toHistoricalBt);
             this.Controls.Add(this.toVideosBt);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.videoReviewLb);
+            this.Controls.Add(this.VersionLb);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.helpBt);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.helpLb);
+            this.Controls.Add(this.dateVersionLb);
+            this.Controls.Add(this.numberVersionLb);
             this.Controls.Add(this.englishLan);
             this.Controls.Add(this.spanishLan);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.changeTextLb);
+            this.Controls.Add(this.progProyectLb);
             this.Controls.Add(this.problemsBt);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.ProblemReviewLb);
             this.Controls.Add(this.equationsBt);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.EquationsLb);
             this.Controls.Add(this.constantsBt);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.ConstantsLb);
+            this.Controls.Add(this.ConceptsLb);
             this.Controls.Add(this.conceptsBt);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.titleLb);
             this.Name = "MainScreen";
             this.Text = "Main Screen";
+            this.Load += new System.EventHandler(this.MainScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,28 +316,29 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label titleLb;
         private System.Windows.Forms.Button conceptsBt;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label ConceptsLb;
+        private System.Windows.Forms.Label ConstantsLb;
         private System.Windows.Forms.Button constantsBt;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label EquationsLb;
         private System.Windows.Forms.Button equationsBt;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label ProblemReviewLb;
         private System.Windows.Forms.Button problemsBt;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label progProyectLb;
+        private System.Windows.Forms.Label changeTextLb;
         private System.Windows.Forms.RadioButton spanishLan;
         private System.Windows.Forms.RadioButton englishLan;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label numberVersionLb;
+        private System.Windows.Forms.Label dateVersionLb;
+        private System.Windows.Forms.Label helpLb;
         private System.Windows.Forms.Button helpBt;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label VersionLb;
+        private System.Windows.Forms.Label videoReviewLb;
         private System.Windows.Forms.Button toVideosBt;
         private System.Windows.Forms.Button toHistoricalBt;
+        private System.Windows.Forms.Button changeLanBt;
     }
 }
 

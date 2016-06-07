@@ -1,12 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Physics
@@ -41,15 +34,15 @@ namespace Physics
             }
             catch (PathTooLongException)
             {
-                Console.WriteLine("Path too long");
+                MessageBox.Show("Path too long");
             }
-            catch (IOException ex)
+            catch (IOException)
             {
-                Console.WriteLine("In/Out exception {0}", ex);
+                MessageBox.Show("In/Out exception");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Console.WriteLine("Uknown exception {0}", ex);
+                MessageBox.Show("Unkown exception");
             }
         }
 
@@ -103,7 +96,10 @@ namespace Physics
 
         private void Historical_Load(object sender, EventArgs e)
         {
+
+
             LoadHistoricalFile();
+            PassDataFromMainScreen();
         }
 
         private void backBt_Click_1(object sender, EventArgs e)
@@ -135,6 +131,12 @@ namespace Physics
             {
                 MessageBox.Show("Operation aborted");
             }
+        }
+
+        private void PassDataFromMainScreen()
+        {
+            backBt.Text = MainScreen.BackBt;
+            resetBt.Text = MainScreen.HistResetBt;
         }
     }
 }

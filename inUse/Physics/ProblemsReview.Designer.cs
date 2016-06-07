@@ -37,7 +37,7 @@
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backBt = new System.Windows.Forms.Button();
-            this.tbProblem = new System.Windows.Forms.TextBox();
+            this.eqTb = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.graphicPlotter = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.resultEq = new System.Windows.Forms.Label();
@@ -70,13 +70,13 @@
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.loadToolStripMenuItem.Text = "Load";
             // 
             // helpToolStripMenuItem
@@ -88,7 +88,7 @@
             // 
             // backBt
             // 
-            this.backBt.Location = new System.Drawing.Point(375, 27);
+            this.backBt.Location = new System.Drawing.Point(363, 244);
             this.backBt.Name = "backBt";
             this.backBt.Size = new System.Drawing.Size(133, 33);
             this.backBt.TabIndex = 1;
@@ -96,21 +96,21 @@
             this.backBt.UseVisualStyleBackColor = true;
             this.backBt.Click += new System.EventHandler(this.backBt_Click);
             // 
-            // tbProblem
+            // eqTb
             // 
-            this.tbProblem.Location = new System.Drawing.Point(119, 68);
-            this.tbProblem.Name = "tbProblem";
-            this.tbProblem.Size = new System.Drawing.Size(120, 20);
-            this.tbProblem.TabIndex = 2;
+            this.eqTb.Location = new System.Drawing.Point(107, 61);
+            this.eqTb.Name = "eqTb";
+            this.eqTb.Size = new System.Drawing.Size(120, 20);
+            this.eqTb.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1, 68);
+            this.label1.Location = new System.Drawing.Point(22, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 13);
+            this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Enter physic equation:";
+            this.label1.Text = "Enter equation:";
             // 
             // graphicPlotter
             // 
@@ -145,14 +145,15 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(375, 104);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 6;
             // 
             // btSolve
             // 
-            this.btSolve.Location = new System.Drawing.Point(248, 68);
+            this.btSolve.Location = new System.Drawing.Point(245, 53);
             this.btSolve.Name = "btSolve";
-            this.btSolve.Size = new System.Drawing.Size(83, 20);
+            this.btSolve.Size = new System.Drawing.Size(83, 35);
             this.btSolve.TabIndex = 7;
             this.btSolve.Text = "Solve!";
             this.btSolve.UseVisualStyleBackColor = true;
@@ -168,7 +169,7 @@
             this.Controls.Add(this.resultEq);
             this.Controls.Add(this.graphicPlotter);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tbProblem);
+            this.Controls.Add(this.eqTb);
             this.Controls.Add(this.backBt);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -191,7 +192,7 @@
         private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.Button backBt;
-        private System.Windows.Forms.TextBox tbProblem;
+        private System.Windows.Forms.TextBox eqTb;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataVisualization.Charting.Chart graphicPlotter;
         private System.Windows.Forms.Label resultEq;

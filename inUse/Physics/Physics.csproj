@@ -53,6 +53,12 @@
     <Compile Include="Acceleration.Designer.cs">
       <DependentUpon>Acceleration.cs</DependentUpon>
     </Compile>
+    <Compile Include="AngularAcceleration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AngularAcceleration.Designer.cs">
+      <DependentUpon>AngularAcceleration.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChangeLog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,16 @@
     <Compile Include="InitialVandHmax.Designer.cs">
       <DependentUpon>InitialVandHmax.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lang\LangEn.Designer.cs">
+      <DependentUpon>LangEn.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Lang\LangEs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LangEs.resx</DependentUpon>
+    </Compile>
     <Compile Include="Position.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +149,9 @@
     <EmbeddedResource Include="Acceleration.resx">
       <DependentUpon>Acceleration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AngularAcceleration.resx">
+      <DependentUpon>AngularAcceleration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChangeLog.resx">
       <DependentUpon>ChangeLog.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +178,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InitialVandHmax.resx">
       <DependentUpon>InitialVandHmax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lang\LangEn.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LangEn.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lang\LangEs.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LangEs.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Position.resx">
       <DependentUpon>Position.cs</DependentUpon>

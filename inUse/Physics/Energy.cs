@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Physics
@@ -93,15 +86,15 @@ namespace Physics
             }
             catch (PathTooLongException)
             {
-                Console.WriteLine("Path too long.");
+                MessageBox.Show("Path too long");
             }
-            catch (IOException ex)
+            catch (IOException)
             {
-                Console.WriteLine("Input/Ouput error: {0}", ex.Message);
+                MessageBox.Show("In/Out exception");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Console.WriteLine("Unexpected error: {0}", ex.Message);
+                MessageBox.Show("Unkown exception");
             }
         }
     }
