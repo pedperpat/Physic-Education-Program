@@ -23,9 +23,9 @@ Repaso / Calculadora de física usando Windows Forms
 
 9º Entrega: En la misma ventana de la solución a la ecuación,hacer mediante un chart que dibuje la gráfica de la ecuación si puede ser posible.
 
-10º Entrega: Pasar todo texto de botones, menús, conceptos y términos a inglés y español para hacerlo multilingüe.(1)
+---DONE---! 10º Entrega: Pasar todo texto de botones, menús, conceptos y términos a inglés y español para hacerlo multilingüe.(1)
 
-11º Entrega: Pasar todo texto de botones, menús, conceptos y términos a inglés y español para hacerlo multilingüe.(2)
+---DONE---! 11º Entrega: Pasar todo texto de botones, menús, conceptos y términos a inglés y español para hacerlo multilingüe.(2)
 
 12º Entrega: Añadir nuevas ecuaciones de varios temas: termodinámica, momento de fuerza, aceleración angular, período y frecuencia,leyes de Newton,etc...
 
