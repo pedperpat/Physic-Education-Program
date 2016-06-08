@@ -7,7 +7,7 @@ namespace Physics
     public partial class InitialVandHmax : Form
     {
         protected const double G = 9.80665; // TODO: try to get the value of the variable from the Constants.cs
-
+        //protected double Gravitation;
         public InitialVandHmax()
         {
             InitializeComponent();
@@ -16,21 +16,28 @@ namespace Physics
         private void InitialVandHmax_Load(object sender, EventArgs e)
         {
             //PassTranslationTexts();
+            //Constants.GrabConstants();
+            //Constants.InitG();
         }
 
         // Initial V method to get the initial velocity when a bullet it's shooted.
         public string GetInitialV()
         {
-            if((totalTimeTb.TextLength == 0) || (System.Text.RegularExpressions.Regex.IsMatch(totalTimeTb.Text, "[^0-9]")))
+            if((totalTimeTb.TextLength == 0) || 
+                (System.Text.RegularExpressions.Regex.IsMatch(totalTimeTb.Text, "[^0-9]")))
             {
                 MessageBox.Show("Please enter only numbers.");
                 return resultVoTb.Text = "0";
             }
             else
             {
+                //GetG();
+                //Constants.GrabConstants();
+                //Gravitation = Constants.diccOfConstants["Gravitation constant"]; // To be used in a future
                 double v0 = 0;
                 double totalTime = Convert.ToDouble(totalTimeTb.Text) / 2;
-                v0 = G * totalTime; // Aplying V equation "vf = vo + G * t"
+                v0 = G * totalTime; // Aplying V equation "vf = vo + G * t" 
+                // Grabbing G from constants class
                 resultVoTb.Text = Convert.ToString(v0) + " m/s";
                 return resultVoTb.Text;
             }
@@ -46,6 +53,7 @@ namespace Physics
             }
             else
             {
+                //GetG();
                 string[] voWithoutUnit = GetInitialV().Split(' '); // Get the value of Vo and remove the "m/s" string
                 double v0 = Convert.ToDouble(voWithoutUnit[0]);
                 double time = Convert.ToDouble(totalTimeTb.Text) / 2;
@@ -146,5 +154,10 @@ namespace Physics
             solveHmaxBt.Text = MainScreen.solveHMax;
             
         }
+
+        //public void GetG()
+        //{
+        //    Gravitation = Constants.G;
+        //}
     }
 }

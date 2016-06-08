@@ -30,36 +30,36 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.valueOfLight = new System.Windows.Forms.TextBox();
-            this.valueOfPlanck = new System.Windows.Forms.TextBox();
-            this.valueOfGravitation = new System.Windows.Forms.TextBox();
-            this.valueOfAvogadro = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.valueOf1 = new System.Windows.Forms.TextBox();
+            this.valueOf2 = new System.Windows.Forms.TextBox();
+            this.valueOf3 = new System.Windows.Forms.TextBox();
+            this.valueOf4 = new System.Windows.Forms.TextBox();
+            this.variable1 = new System.Windows.Forms.Label();
+            this.variable2 = new System.Windows.Forms.Label();
+            this.variable3 = new System.Windows.Forms.Label();
+            this.variable4 = new System.Windows.Forms.Label();
+            this.variable5 = new System.Windows.Forms.Label();
+            this.variable6 = new System.Windows.Forms.Label();
+            this.variable7 = new System.Windows.Forms.Label();
+            this.variable8 = new System.Windows.Forms.Label();
+            this.variable10 = new System.Windows.Forms.Label();
+            this.variable9 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.valueOfElectron = new System.Windows.Forms.TextBox();
-            this.valueOfMassNeutron = new System.Windows.Forms.TextBox();
+            this.valueOf5 = new System.Windows.Forms.TextBox();
+            this.valueOf6 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
-            this.valueOfMassProton = new System.Windows.Forms.TextBox();
+            this.valueOf7 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
-            this.valueOfMassElectron = new System.Windows.Forms.TextBox();
+            this.valueOf8 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
-            this.valueOfAtm = new System.Windows.Forms.TextBox();
+            this.valueOf9 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
-            this.valueOfAtomicMass = new System.Windows.Forms.TextBox();
+            this.valueOf10 = new System.Windows.Forms.TextBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
@@ -76,6 +76,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.backBt = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.storeVariablesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -98,36 +100,36 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171F));
-            this.tableLayoutPanel1.Controls.Add(this.valueOfLight, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.valueOfPlanck, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.valueOfGravitation, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.valueOfAvogadro, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label9, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.label10, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.label11, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.valueOf1, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.valueOf2, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.valueOf3, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.valueOf4, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.variable1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.variable2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.variable3, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.variable4, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.variable5, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.variable6, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.variable7, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.variable8, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.variable10, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.variable9, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.textBox5, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.textBox6, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.textBox7, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.textBox8, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.textBox9, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.textBox10, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.valueOfElectron, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.valueOfMassNeutron, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.valueOf5, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.valueOf6, 2, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBox13, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.valueOfMassProton, 2, 6);
+            this.tableLayoutPanel1.Controls.Add(this.valueOf7, 2, 6);
             this.tableLayoutPanel1.Controls.Add(this.textBox15, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.valueOfMassElectron, 2, 7);
+            this.tableLayoutPanel1.Controls.Add(this.valueOf8, 2, 7);
             this.tableLayoutPanel1.Controls.Add(this.textBox17, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.valueOfAtm, 2, 8);
+            this.tableLayoutPanel1.Controls.Add(this.valueOf9, 2, 8);
             this.tableLayoutPanel1.Controls.Add(this.textBox19, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.valueOfAtomicMass, 2, 9);
+            this.tableLayoutPanel1.Controls.Add(this.valueOf10, 2, 9);
             this.tableLayoutPanel1.Controls.Add(this.textBox21, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.textBox22, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.textBox23, 3, 2);
@@ -154,135 +156,135 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(733, 265);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // valueOfLight
+            // valueOf1
             // 
-            this.valueOfLight.Location = new System.Drawing.Point(272, 3);
-            this.valueOfLight.Name = "valueOfLight";
-            this.valueOfLight.ReadOnly = true;
-            this.valueOfLight.Size = new System.Drawing.Size(287, 20);
-            this.valueOfLight.TabIndex = 0;
-            this.valueOfLight.Text = "299792458";
-            this.valueOfLight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.valueOf1.Location = new System.Drawing.Point(272, 3);
+            this.valueOf1.Name = "valueOf1";
+            this.valueOf1.ReadOnly = true;
+            this.valueOf1.Size = new System.Drawing.Size(287, 20);
+            this.valueOf1.TabIndex = 0;
+            this.valueOf1.Text = "299792458";
+            this.valueOf1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // valueOfPlanck
+            // valueOf2
             // 
-            this.valueOfPlanck.Location = new System.Drawing.Point(272, 29);
-            this.valueOfPlanck.Name = "valueOfPlanck";
-            this.valueOfPlanck.ReadOnly = true;
-            this.valueOfPlanck.Size = new System.Drawing.Size(287, 20);
-            this.valueOfPlanck.TabIndex = 1;
-            this.valueOfPlanck.Text = "6.67384*10^−11";
-            this.valueOfPlanck.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.valueOf2.Location = new System.Drawing.Point(272, 29);
+            this.valueOf2.Name = "valueOf2";
+            this.valueOf2.ReadOnly = true;
+            this.valueOf2.Size = new System.Drawing.Size(287, 20);
+            this.valueOf2.TabIndex = 1;
+            this.valueOf2.Text = "6.67384*10^−11";
+            this.valueOf2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // valueOfGravitation
+            // valueOf3
             // 
-            this.valueOfGravitation.Location = new System.Drawing.Point(272, 55);
-            this.valueOfGravitation.Name = "valueOfGravitation";
-            this.valueOfGravitation.ReadOnly = true;
-            this.valueOfGravitation.Size = new System.Drawing.Size(287, 20);
-            this.valueOfGravitation.TabIndex = 2;
-            this.valueOfGravitation.Text = "9.80665";
-            this.valueOfGravitation.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.valueOf3.Location = new System.Drawing.Point(272, 55);
+            this.valueOf3.Name = "valueOf3";
+            this.valueOf3.ReadOnly = true;
+            this.valueOf3.Size = new System.Drawing.Size(287, 20);
+            this.valueOf3.TabIndex = 2;
+            this.valueOf3.Text = "9.80665";
+            this.valueOf3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // valueOfAvogadro
+            // valueOf4
             // 
-            this.valueOfAvogadro.Location = new System.Drawing.Point(272, 81);
-            this.valueOfAvogadro.Name = "valueOfAvogadro";
-            this.valueOfAvogadro.ReadOnly = true;
-            this.valueOfAvogadro.Size = new System.Drawing.Size(287, 20);
-            this.valueOfAvogadro.TabIndex = 3;
-            this.valueOfAvogadro.Text = "6.02214129*10^23";
-            this.valueOfAvogadro.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.valueOf4.Location = new System.Drawing.Point(272, 81);
+            this.valueOf4.Name = "valueOf4";
+            this.valueOf4.ReadOnly = true;
+            this.valueOf4.Size = new System.Drawing.Size(287, 20);
+            this.valueOf4.TabIndex = 3;
+            this.valueOf4.Text = "6.02214129*10^23";
+            this.valueOf4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label2
+            // variable1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Speed of light";
+            this.variable1.AutoSize = true;
+            this.variable1.Location = new System.Drawing.Point(3, 0);
+            this.variable1.Name = "variable1";
+            this.variable1.Size = new System.Drawing.Size(72, 13);
+            this.variable1.TabIndex = 4;
+            this.variable1.Text = "Speed of light";
             // 
-            // label3
+            // variable2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Planck constant";
+            this.variable2.AutoSize = true;
+            this.variable2.Location = new System.Drawing.Point(3, 26);
+            this.variable2.Name = "variable2";
+            this.variable2.Size = new System.Drawing.Size(84, 13);
+            this.variable2.TabIndex = 5;
+            this.variable2.Text = "Planck constant";
             // 
-            // label4
+            // variable3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 52);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Gravitation constant";
+            this.variable3.AutoSize = true;
+            this.variable3.Location = new System.Drawing.Point(3, 52);
+            this.variable3.Name = "variable3";
+            this.variable3.Size = new System.Drawing.Size(102, 13);
+            this.variable3.TabIndex = 6;
+            this.variable3.Text = "Gravitation constant";
             // 
-            // label5
+            // variable4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 78);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Avogadro\'s number";
+            this.variable4.AutoSize = true;
+            this.variable4.Location = new System.Drawing.Point(3, 78);
+            this.variable4.Name = "variable4";
+            this.variable4.Size = new System.Drawing.Size(98, 13);
+            this.variable4.TabIndex = 7;
+            this.variable4.Text = "Avogadro\'s number";
             // 
-            // label6
+            // variable5
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 104);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Charge of electron";
+            this.variable5.AutoSize = true;
+            this.variable5.Location = new System.Drawing.Point(3, 104);
+            this.variable5.Name = "variable5";
+            this.variable5.Size = new System.Drawing.Size(94, 13);
+            this.variable5.TabIndex = 8;
+            this.variable5.Text = "Charge of electron";
             // 
-            // label7
+            // variable6
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 130);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 13);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Mass of neutron";
+            this.variable6.AutoSize = true;
+            this.variable6.Location = new System.Drawing.Point(3, 130);
+            this.variable6.Name = "variable6";
+            this.variable6.Size = new System.Drawing.Size(83, 13);
+            this.variable6.TabIndex = 9;
+            this.variable6.Text = "Mass of neutron";
             // 
-            // label8
+            // variable7
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 156);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 13);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Mass of proton";
+            this.variable7.AutoSize = true;
+            this.variable7.Location = new System.Drawing.Point(3, 156);
+            this.variable7.Name = "variable7";
+            this.variable7.Size = new System.Drawing.Size(77, 13);
+            this.variable7.TabIndex = 10;
+            this.variable7.Text = "Mass of proton";
             // 
-            // label9
+            // variable8
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 182);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 13);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Mass of electron";
+            this.variable8.AutoSize = true;
+            this.variable8.Location = new System.Drawing.Point(3, 182);
+            this.variable8.Name = "variable8";
+            this.variable8.Size = new System.Drawing.Size(85, 13);
+            this.variable8.TabIndex = 11;
+            this.variable8.Text = "Mass of electron";
             // 
-            // label10
+            // variable10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 234);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(86, 13);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "Atomic mass unit";
+            this.variable10.AutoSize = true;
+            this.variable10.Location = new System.Drawing.Point(3, 234);
+            this.variable10.Name = "variable10";
+            this.variable10.Size = new System.Drawing.Size(86, 13);
+            this.variable10.TabIndex = 12;
+            this.variable10.Text = "Atomic mass unit";
             // 
-            // label11
+            // variable9
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 208);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 13);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "Standard atmosphere";
+            this.variable9.AutoSize = true;
+            this.variable9.Location = new System.Drawing.Point(3, 208);
+            this.variable9.Name = "variable9";
+            this.variable9.Size = new System.Drawing.Size(108, 13);
+            this.variable9.TabIndex = 13;
+            this.variable9.Text = "Standard atmosphere";
             // 
             // textBox5
             // 
@@ -344,25 +346,25 @@
             this.textBox10.Text = "Mn";
             this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // valueOfElectron
+            // valueOf5
             // 
-            this.valueOfElectron.Location = new System.Drawing.Point(272, 107);
-            this.valueOfElectron.Name = "valueOfElectron";
-            this.valueOfElectron.ReadOnly = true;
-            this.valueOfElectron.Size = new System.Drawing.Size(287, 20);
-            this.valueOfElectron.TabIndex = 20;
-            this.valueOfElectron.Text = "1.602176565×10^−19";
-            this.valueOfElectron.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.valueOf5.Location = new System.Drawing.Point(272, 107);
+            this.valueOf5.Name = "valueOf5";
+            this.valueOf5.ReadOnly = true;
+            this.valueOf5.Size = new System.Drawing.Size(287, 20);
+            this.valueOf5.TabIndex = 20;
+            this.valueOf5.Text = "1.602176565*10^−19";
+            this.valueOf5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // valueOfMassNeutron
+            // valueOf6
             // 
-            this.valueOfMassNeutron.Location = new System.Drawing.Point(272, 133);
-            this.valueOfMassNeutron.Name = "valueOfMassNeutron";
-            this.valueOfMassNeutron.ReadOnly = true;
-            this.valueOfMassNeutron.Size = new System.Drawing.Size(287, 20);
-            this.valueOfMassNeutron.TabIndex = 21;
-            this.valueOfMassNeutron.Text = "1.674927351*10^-27";
-            this.valueOfMassNeutron.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.valueOf6.Location = new System.Drawing.Point(272, 133);
+            this.valueOf6.Name = "valueOf6";
+            this.valueOf6.ReadOnly = true;
+            this.valueOf6.Size = new System.Drawing.Size(287, 20);
+            this.valueOf6.TabIndex = 21;
+            this.valueOf6.Text = "1.674927351*10^-27";
+            this.valueOf6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox13
             // 
@@ -374,15 +376,15 @@
             this.textBox13.Text = "Mp";
             this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // valueOfMassProton
+            // valueOf7
             // 
-            this.valueOfMassProton.Location = new System.Drawing.Point(272, 159);
-            this.valueOfMassProton.Name = "valueOfMassProton";
-            this.valueOfMassProton.ReadOnly = true;
-            this.valueOfMassProton.Size = new System.Drawing.Size(287, 20);
-            this.valueOfMassProton.TabIndex = 23;
-            this.valueOfMassProton.Text = "1.672621777*10^-27";
-            this.valueOfMassProton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.valueOf7.Location = new System.Drawing.Point(272, 159);
+            this.valueOf7.Name = "valueOf7";
+            this.valueOf7.ReadOnly = true;
+            this.valueOf7.Size = new System.Drawing.Size(287, 20);
+            this.valueOf7.TabIndex = 23;
+            this.valueOf7.Text = "1.672621777*10^-27";
+            this.valueOf7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox15
             // 
@@ -394,15 +396,15 @@
             this.textBox15.Text = "Me";
             this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // valueOfMassElectron
+            // valueOf8
             // 
-            this.valueOfMassElectron.Location = new System.Drawing.Point(272, 185);
-            this.valueOfMassElectron.Name = "valueOfMassElectron";
-            this.valueOfMassElectron.ReadOnly = true;
-            this.valueOfMassElectron.Size = new System.Drawing.Size(287, 20);
-            this.valueOfMassElectron.TabIndex = 25;
-            this.valueOfMassElectron.Text = "9.10938291*10^-31";
-            this.valueOfMassElectron.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.valueOf8.Location = new System.Drawing.Point(272, 185);
+            this.valueOf8.Name = "valueOf8";
+            this.valueOf8.ReadOnly = true;
+            this.valueOf8.Size = new System.Drawing.Size(287, 20);
+            this.valueOf8.TabIndex = 25;
+            this.valueOf8.Text = "9.10938291*10^-31";
+            this.valueOf8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox17
             // 
@@ -414,15 +416,15 @@
             this.textBox17.Text = "atm";
             this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // valueOfAtm
+            // valueOf9
             // 
-            this.valueOfAtm.Location = new System.Drawing.Point(272, 211);
-            this.valueOfAtm.Name = "valueOfAtm";
-            this.valueOfAtm.ReadOnly = true;
-            this.valueOfAtm.Size = new System.Drawing.Size(287, 20);
-            this.valueOfAtm.TabIndex = 27;
-            this.valueOfAtm.Text = "101325";
-            this.valueOfAtm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.valueOf9.Location = new System.Drawing.Point(272, 211);
+            this.valueOf9.Name = "valueOf9";
+            this.valueOf9.ReadOnly = true;
+            this.valueOf9.Size = new System.Drawing.Size(287, 20);
+            this.valueOf9.TabIndex = 27;
+            this.valueOf9.Text = "101325";
+            this.valueOf9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox19
             // 
@@ -434,15 +436,15 @@
             this.textBox19.Text = "u";
             this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // valueOfAtomicMass
+            // valueOf10
             // 
-            this.valueOfAtomicMass.Location = new System.Drawing.Point(272, 237);
-            this.valueOfAtomicMass.Name = "valueOfAtomicMass";
-            this.valueOfAtomicMass.ReadOnly = true;
-            this.valueOfAtomicMass.Size = new System.Drawing.Size(287, 20);
-            this.valueOfAtomicMass.TabIndex = 29;
-            this.valueOfAtomicMass.Text = "1.660538921×10^−27";
-            this.valueOfAtomicMass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.valueOf10.Location = new System.Drawing.Point(272, 237);
+            this.valueOf10.Name = "valueOf10";
+            this.valueOf10.ReadOnly = true;
+            this.valueOf10.Size = new System.Drawing.Size(287, 20);
+            this.valueOf10.TabIndex = 29;
+            this.valueOf10.Text = "1.660538921*10^−27";
+            this.valueOf10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox21
             // 
@@ -573,12 +575,27 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(846, 24);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.storeVariablesToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // storeVariablesToolStripMenuItem
+            // 
+            this.storeVariablesToolStripMenuItem.Name = "storeVariablesToolStripMenuItem";
+            this.storeVariablesToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.storeVariablesToolStripMenuItem.Text = "Write variables";
             // 
             // helpToolStripMenuItem
             // 
@@ -616,39 +633,39 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox valueOfLight;
-        private System.Windows.Forms.TextBox valueOfPlanck;
-        private System.Windows.Forms.TextBox valueOfGravitation;
-        private System.Windows.Forms.TextBox valueOfAvogadro;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox valueOf1;
+        private System.Windows.Forms.TextBox valueOf2;
+        private System.Windows.Forms.TextBox valueOf3;
+        private System.Windows.Forms.TextBox valueOf4;
+        private System.Windows.Forms.Label variable1;
         private System.Windows.Forms.Label NameVariable;
         private System.Windows.Forms.Label SymbolVariable;
         private System.Windows.Forms.Label ValueVariable;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label variable2;
+        private System.Windows.Forms.Label variable3;
+        private System.Windows.Forms.Label variable4;
+        private System.Windows.Forms.Label variable5;
+        private System.Windows.Forms.Label variable6;
+        private System.Windows.Forms.Label variable7;
+        private System.Windows.Forms.Label variable8;
+        private System.Windows.Forms.Label variable10;
+        private System.Windows.Forms.Label variable9;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox valueOfElectron;
-        private System.Windows.Forms.TextBox valueOfMassNeutron;
+        private System.Windows.Forms.TextBox valueOf5;
+        private System.Windows.Forms.TextBox valueOf6;
         private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox valueOfMassProton;
+        private System.Windows.Forms.TextBox valueOf7;
         private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox valueOfMassElectron;
+        private System.Windows.Forms.TextBox valueOf8;
         private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox valueOfAtm;
+        private System.Windows.Forms.TextBox valueOf9;
         private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox valueOfAtomicMass;
+        private System.Windows.Forms.TextBox valueOf10;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.TextBox textBox23;
@@ -663,5 +680,7 @@
         private System.Windows.Forms.Button backBt;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem storeVariablesToolStripMenuItem;
     }
 }

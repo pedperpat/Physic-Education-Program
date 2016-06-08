@@ -1,22 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Physics
 {
     public partial class Constants : Form
-    {   
-        protected double[] variableValues = new double[10];
-        //protected List<double> variableValues = new List<double>();
+    {
+        public static Dictionary<string, double> diccOfConstants =
+                new Dictionary<string, double>();
+        public static string[] constantName;
+        public static double[] constantValue;
+        public static List<double> variableValues = new List<double>();
+        public static double G;
         public Constants()
         {
             InitializeComponent();
+            //SetConstantsValue();
+            SetConstantsName();
+            InitG();
+            //GrabConstants();
         }
         private void Constants_Load(object sender, EventArgs e)
         {
@@ -25,50 +27,60 @@ namespace Physics
         private void backBt_Click_1(object sender, EventArgs e)
         {
             MainScreen mainScreen = new MainScreen();
-            //Close();
             Hide();
             mainScreen.ShowDialog();
         }
 
-        //public List<double> GetVariableValues()
+        //public static void GrabConstants()
         //{
-        //    variableValues.Add(Convert.ToDouble(valueOfAtm));
-        //    variableValues.Add(Convert.ToDouble(valueOfAtomicMass));
-        //    variableValues.Add(Convert.ToDouble(valueOfAvogadro));
-        //    variableValues.Add(Convert.ToDouble(valueOfElectron));
-        //    variableValues.Add(Convert.ToDouble(valueOfGravitation));
-        //    variableValues.Add(Convert.ToDouble(valueOfLight));
-        //    variableValues.Add(Convert.ToDouble(valueOfMassElectron));
-        //    variableValues.Add(Convert.ToDouble(valueOfMassNeutron));
-        //    variableValues.Add(Convert.ToDouble(valueOfMassProton));
-        //    variableValues.Add(Convert.ToDouble(valueOfPlanck));
-
-        //    return variableValues;
+        //    for (int i = 0; i < 10; i++)
+        //    {
+        //        diccOfConstants.Add(constantName[i], constantValue[i]);
+        //    }
         //}
 
-        //Trying to get the constant values to an array of double.
-        public double[] GetVariableValues()
+        public void SetConstantsName()
         {
-            variableValues[0] = Convert.ToDouble(valueOfAtm);
-            variableValues[1] = Convert.ToDouble(valueOfAtomicMass);
-            variableValues[2] = Convert.ToDouble(valueOfAvogadro);
-            variableValues[3] = Convert.ToDouble(valueOfElectron);
-            variableValues[4] = Convert.ToDouble(valueOfGravitation);
-            variableValues[5] = Convert.ToDouble(valueOfLight);
-            variableValues[6] = Convert.ToDouble(valueOfMassElectron);
-            variableValues[7] = Convert.ToDouble(valueOfMassNeutron);
-            variableValues[8] = Convert.ToDouble(valueOfMassProton);
-            variableValues[9] = Convert.ToDouble(valueOfPlanck);
+            constantName = new string[10];
 
-
-            return variableValues;
+            constantName[0] = variable1.Text;
+            constantName[1] = variable2.Text;
+            constantName[2] = variable3.Text;
+            constantName[3] = variable4.Text;
+            constantName[4] = variable5.Text;
+            constantName[5] = variable6.Text;
+            constantName[6] = variable7.Text;
+            constantName[7] = variable8.Text;
+            constantName[8] = variable9.Text;
+            constantName[9] = variable10.Text;
         }
+
+        //public void SetConstantsValue()
+        //{
+        //    constantValue = new double[10];
+
+        //    constantValue[0] = Convert.ToDouble(valueOf1.Text);
+        //    constantValue[1] = Convert.ToDouble(valueOf2.Text);
+        //    constantValue[2] = Convert.ToDouble(valueOf3.Text);
+        //    constantValue[3] = Convert.ToDouble(valueOf4.Text);
+        //    constantValue[4] = Convert.ToDouble(valueOf5.Text);
+        //    constantValue[5] = Convert.ToDouble(valueOf6.Text);
+        //    constantValue[6] = Convert.ToDouble(valueOf7.Text);
+        //    constantValue[7] = Convert.ToDouble(valueOf8.Text);
+        //    constantValue[8] = Convert.ToDouble(valueOf9.Text);
+        //    constantValue[9] = Convert.ToDouble(valueOf10.Text);
+        //}
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             HelpScreen help = new HelpScreen();
             Hide();
             help.ShowDialog();
+        }
+
+        public void InitG()
+        {
+            G = Convert.ToDouble(valueOf3.Text);
         }
     }
 }

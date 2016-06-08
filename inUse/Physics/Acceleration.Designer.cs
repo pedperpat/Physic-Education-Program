@@ -54,6 +54,8 @@
             this.backBt = new System.Windows.Forms.Button();
             this.backbutton = new System.Windows.Forms.Button();
             this.mainScreenBt = new System.Windows.Forms.Button();
+            this.loadFileWithValuesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openUserFile = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.formulaPb)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -185,7 +187,8 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exportResultToAFileToolStripMenuItem,
-            this.historicalOfSolutionsToolStripMenuItem});
+            this.historicalOfSolutionsToolStripMenuItem,
+            this.loadFileWithValuesToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
@@ -216,7 +219,7 @@
             // 
             // historicalRTB
             // 
-            this.historicalRTB.Location = new System.Drawing.Point(383, 251);
+            this.historicalRTB.Location = new System.Drawing.Point(54, 47);
             this.historicalRTB.Name = "historicalRTB";
             this.historicalRTB.ReadOnly = true;
             this.historicalRTB.Size = new System.Drawing.Size(471, 228);
@@ -265,6 +268,16 @@
             this.mainScreenBt.Text = "To main";
             this.mainScreenBt.UseVisualStyleBackColor = true;
             this.mainScreenBt.Click += new System.EventHandler(this.mainScreenBt_Click);
+            // 
+            // loadFileWithValuesToolStripMenuItem
+            // 
+            this.loadFileWithValuesToolStripMenuItem.Name = "loadFileWithValuesToolStripMenuItem";
+            this.loadFileWithValuesToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.loadFileWithValuesToolStripMenuItem.Text = "Load file with values";
+            // 
+            // openUserFile
+            // 
+            this.openUserFile.FileName = "openUserFile";
             // 
             // Acceleration
             // 
@@ -328,5 +341,7 @@
         private System.Windows.Forms.Button backBt;
         private System.Windows.Forms.Button backbutton;
         private System.Windows.Forms.Button mainScreenBt;
+        private System.Windows.Forms.ToolStripMenuItem loadFileWithValuesToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openUserFile;
     }
 }

@@ -1,14 +1,13 @@
 ﻿using System;
-using System.ComponentModel;
+using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
-using System.Resources;
 using System.Windows.Forms;
 
 namespace Physics
 {
     public partial class Acceleration : Form
     {
+        protected List<String> fileLoadedValues;
         public Acceleration()
         {
             InitializeComponent();
@@ -123,54 +122,6 @@ namespace Physics
             {
                 MessageBox.Show("Uknown exception");
             }
-
-        }
-
-        // Export to a file as a history of solved acceleration equations
-        // Code to test
-        private void saveFileDialog_FileOk(object sender, CancelEventArgs e)
-        {
-            //Method nº1 of export *WORKING!*
-            //################################################################
-            // Get all values of the textboxes as a string
-            //string initT = initTimeTb.Text;
-            //string finalT = finalTimeTb.Text;
-            //string initV = initMetersTb.Text;
-            //string finalV = finalTimeTb.Text;
-            //string result = resultTb.Text;
-
-            //SaveFileDialog saveFile = new SaveFileDialog();
-            //if(saveFile.ShowDialog() == DialogResult.OK)
-            //{
-            //    using (Stream stream = File.Open(saveFile.FileName, FileMode.CreateNew))
-            //    using (StreamWriter writer = new StreamWriter(stream))
-            //    {
-            //        writer.Write("Acceleration Equation: Initial Time = " + initT + " | "
-            //        +"Final time = "+ finalT +" | Initial velocity = "+ initV +" | " +
-            //        "Final velocity = "+ finalV +" | Result: "+ result +"\n");
-            //    }
-            //}
-            //Method nº2 of export 
-            //################################################################
-
-            // Get all values of the textboxes as a string
-            //string initT = initTimeTb.Text;
-            //string finalT = finalTimeTb.Text;
-            //string initV = initMetersTb.Text;
-            //string finalV = finalTimeTb.Text;
-            //string result = resultTb.Text;
-
-            //string fileName = saveFileDialog.FileName; // To get the name of the file.
-
-            //// This string is gonna be saved at the file as a line, each solution will be at a new line. 
-            //string data = "Acceleration Equation: Initial Time = "+ initT +" | "
-            //    +"Final time = "+ finalT +" | Initial velocity = "+ initV +" | " +
-            //    "Final velocity = "+ finalV +" | Result: "+ result +"\n";
-
-            //if (!File.Exists(fileName))
-            //    File.CreateText(fileName);
-            //// No need to close the file, this method autoclose the file when finished writing.
-            //File.AppendAllText(fileName, data); 
         }
 
         // To show the historical file at a richtextbox
@@ -281,6 +232,13 @@ namespace Physics
             MainScreen ms = new MainScreen();
             Hide();
             ms.ShowDialog();
+        }
+
+        public void LoadValuesFromFile()
+        {
+            DialogResult result = openUserFile.ShowDialog();
+            // TODO: Load all the values of the equation to solve 
+            // from the file the user puts at the openfiledialog.
         }
     }
 }

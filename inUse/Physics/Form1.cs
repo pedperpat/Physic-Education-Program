@@ -39,6 +39,8 @@ namespace Physics
         public static string toFinalV;
         public static string toKE;
 
+        protected static int openForms = Application.OpenForms.Count;
+
         protected Equations equations;
         public MainScreen()
         {
@@ -48,25 +50,25 @@ namespace Physics
         private void conceptsBt_Click(object sender, EventArgs e)
         {
             Concepts concepts = new Concepts();
-            //Close();
             Hide();
             concepts.ShowDialog();
+            this.Show();
         }
 
         private void constantsBt_Click(object sender, EventArgs e)
         {
             Constants cons = new Constants();
-            //Close();
             Hide();
             cons.ShowDialog();
+            this.Show();
         }
 
         private void problemsBt_Click(object sender, EventArgs e)
         {
             ProblemsReview problems = new ProblemsReview();
-            //Close();
             Hide();
             problems.ShowDialog();
+            this.Show();
         }
 
         private void equationsBt_Click(object sender, EventArgs e)
@@ -74,6 +76,7 @@ namespace Physics
             Equations eq = new Equations();
             Hide();
             eq.ShowDialog();
+            this.Show();
         }
 
         private void helpBt_Click(object sender, EventArgs e)
@@ -81,6 +84,7 @@ namespace Physics
             HelpScreen help = new HelpScreen();
             Hide();
             help.ShowDialog();
+            this.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -88,6 +92,7 @@ namespace Physics
             ChangeLog changelog = new ChangeLog();
             Hide();
             changelog.ShowDialog();
+            this.Show();
         }
 
         private void toVideosBt_Click(object sender, EventArgs e)
@@ -95,30 +100,15 @@ namespace Physics
             VideoReviewForm video = new VideoReviewForm();
             Hide();
             video.ShowDialog();
+            this.Show();
         }
 
         private void toHistoricalBt_Click(object sender, EventArgs e)
         {
-            //if (englishLan.Checked == true)
-            //{
-            //    CultureInfo ci = new CultureInfo("en-US");
-            //    Assembly english = Assembly.Load("Physics");
-            //    ResourceManager rm = new ResourceManager("Physics.Lang.LangEn", english);
-
-            //    // Change the textbox values to the new texts from the internal resource file.
-            //    HistBackBt = rm.GetString("backButton", ci);
-            //    HistResetBt = rm.GetString("resetBt", ci);
-            //}
-            //else
-            //{
-            //    CultureInfo ci = new CultureInfo("es-ES");
-            //    Assembly spanish = Assembly.Load("Physics");
-            //    ResourceManager rm = new ResourceManager("Physics.Lang.LangEs", spanish);
-
-            //}
             Historical historial = new Historical();
             Hide();
             historial.ShowDialog();
+            this.Show();
         }
 
         // Method to change the languaje using windows forms resource files stored at Lang directory.
@@ -208,6 +198,20 @@ namespace Physics
         private void MainScreen_Load(object sender, EventArgs e)
         {
             ChangeLang();
+        }
+
+        public static void ExitApp()
+        {
+            for (int i = 0; i < openForms; i++)
+            {
+                Application.OpenForms[i].Close();
+            }
+        }
+
+        // TODO: Show message when app is closed.
+        private void MainScreen_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

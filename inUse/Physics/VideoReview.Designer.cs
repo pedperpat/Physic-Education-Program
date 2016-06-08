@@ -32,6 +32,8 @@
             this.clickLinkLb = new System.Windows.Forms.LinkLabel();
             this.youtubeVideo = new AxShockwaveFlashObjects.AxShockwaveFlash();
             this.backBt = new System.Windows.Forms.Button();
+            this.nextVidBt = new System.Windows.Forms.Button();
+            this.prevVidBt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.youtubeVideo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,12 +67,34 @@
             this.backBt.UseVisualStyleBackColor = true;
             this.backBt.Click += new System.EventHandler(this.backBt_Click);
             // 
+            // nextVidBt
+            // 
+            this.nextVidBt.Location = new System.Drawing.Point(595, 12);
+            this.nextVidBt.Name = "nextVidBt";
+            this.nextVidBt.Size = new System.Drawing.Size(90, 32);
+            this.nextVidBt.TabIndex = 4;
+            this.nextVidBt.Text = "Next Video";
+            this.nextVidBt.UseVisualStyleBackColor = true;
+            this.nextVidBt.Click += new System.EventHandler(this.nextVidBt_Click);
+            // 
+            // prevVidBt
+            // 
+            this.prevVidBt.Location = new System.Drawing.Point(499, 12);
+            this.prevVidBt.Name = "prevVidBt";
+            this.prevVidBt.Size = new System.Drawing.Size(90, 32);
+            this.prevVidBt.TabIndex = 5;
+            this.prevVidBt.Text = "Previous Video";
+            this.prevVidBt.UseVisualStyleBackColor = true;
+            this.prevVidBt.Click += new System.EventHandler(this.prevVidBt_Click);
+            // 
             // VideoReviewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(793, 484);
+            this.Controls.Add(this.prevVidBt);
+            this.Controls.Add(this.nextVidBt);
             this.Controls.Add(this.backBt);
             this.Controls.Add(this.youtubeVideo);
             this.Controls.Add(this.clickLinkLb);
@@ -89,5 +113,7 @@
         private System.Windows.Forms.LinkLabel clickLinkLb;
         private AxShockwaveFlashObjects.AxShockwaveFlash youtubeVideo;
         private System.Windows.Forms.Button backBt;
+        private System.Windows.Forms.Button nextVidBt;
+        private System.Windows.Forms.Button prevVidBt;
     }
 }
